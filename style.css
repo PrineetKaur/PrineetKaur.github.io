@@ -1,0 +1,80 @@
+/* General */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdf8f3; /* cream */
+  color: #4b3b2d; /* coffee brown */
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  background-color: #d6bfa8; /* light brown */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  transition: opacity 0.2s ease;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+/* Sections */
+section {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Home */
+#home {
+  text-align: center;
+  padding-top: 6rem;
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+}
+
+/* Projects */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background-color: #fff9f2;
+  border: 1px solid #e0d4c4;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  background-color: #d6bfa8;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
