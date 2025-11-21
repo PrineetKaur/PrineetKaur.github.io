@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>My Techfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <meta name="theme-color" content="#ff6fa3" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prineet Kaur Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Typed.js for typing animation -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
+
 <body>
 
-  <!-- Left Sidebar -->
-  <aside class="sidebar" id="sidebar">
+  <!-- Sidebar -->
+  <aside class="sidebar">
     <div class="profile">
-      <img src="assets/img/mylogo.jpg" alt="" class="img-fluid rounded-circle">
+      <img src="assets/img/myphoto.jpeg" alt="Profile Photo">
       <h2>Prineet Kaur</h2>
       <p class="role">Tech Product Enabler and Communicator</p>
     </div>
-    
 
     <nav class="nav">
       <a href="#home" class="nav-link active">Home</a>
@@ -29,203 +33,192 @@
     </nav>
 
     <div class="sidebar-footer">
-      <small>© <span id="year"></span> Prineet Kaur</small>
+      <small>© 2025 Prineet Kaur</small>
     </div>
   </aside>
 
-<!-- Hero / Home -->
-<section id="home" class="hero section">
+  <!-- Main Content -->
+  <main class="main">
 
-  <div class="hero-bg"></div> <!-- background image -->
-  <div class="hero-overlay"></div> <!-- dark overlay -->
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
 
-  <div class="hero-content" data-aos="fade-up">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
 
-    <h1>Hi, I'm <span class="accent">Prineet Kaur</span></h1>
+      <div class="hero-content">
 
-    <h2>
-      I'm a 
-      <span class="typed"
-        data-typed-items="Technical Product Enabler, Technical Product Communicator, Developer Advocate">
-      </span>
-    </h2>
+        <h1>Hi, I'm <span class="accent">Prineet Kaur</span></h1>
 
-    <p class="hero-desc">
-      I love to write about DevOps, Infra, Observability, DevEx, and AI's impact on them ✍️ ✨ 🚀
-    </p>
+        <h2>
+          I'm a
+          <span class="typed"
+            data-typed-items="Technical Product Enabler, Technical Product Communicator, Developer Advocate"></span>
+        </h2>
 
-    <div class="hero-ctas">
-      <a href="#projects" class="btn">View Projects</a>
-      <a href="#contact" class="btn-outline">Contact Me</a>
-    </div>
+        <p class="hero-desc">
+          I love to write about DevOps, Infra, Observability, DevEx, and AI's impact on them ✍️ ✨ 🚀
+        </p>
 
-  </div>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="#contact" class="btn-outline">Contact Me</a>
+        </div>
 
-</section>
-    
-
-    <!-- About -->
-    <section id="about" class="section">
-      <h2 class="section-title">About</h2>
-      <div class="two-col">
-        <div>
-          <p>
-            Hello! I'm Prineet — a frontend developer with a love for clean design, accessibility, and performance.
-            I enjoy turning ideas into pixel-perfect, fast interfaces.
-          </p>
-          <ul>
-            <li>Location: Paris, FRANCE</li>
-            <li>Availability: Open to work</li>
-            <li>Interests: DevOps, Infra, Observability, DevEx</li>
-          </ul>
-     <!--   </div>
-           <div class="about-img">
-          <img src="/mnt/data/IMG_08073383-CCFA-4DAF-9262-942F063BFCA2.jpeg" alt="About image" />   
-        </div>  -->
       </div>
+
     </section>
 
-    <!-- Resume -->
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="section-title">About</h2>
+      <p>
+        I’m a passionate developer and product communicator with experience across DevOps, Developer Experience,
+        Observability, and infrastructure platforms. I love simplifying complex tech so teams can adopt, implement, and
+        innovate faster.
+      </p>
+    </section>
+
+    <!-- RESUME -->
     <section id="resume" class="section">
       <h2 class="section-title">Resume</h2>
       <div class="resume-grid">
+
         <div class="resume-item">
-          <h3>Frontend Developer — Awesome Studio</h3>
-          <span class="muted">2022 — Present</span>
-          <p>Built interactive web apps using React, optimized performance, and improved conversion by 20%.</p>
+          <h3>Tech Product Enabler — Company A</h3>
+          <span class="muted">2023 — Present</span>
+          <p>Helping teams adopt modern tooling and internal developer platforms.</p>
         </div>
+
         <div class="resume-item">
-          <h3>Web Developer — Creative Agency</h3>
-          <span class="muted">2020 — 2022</span>
-          <p>Worked on responsive marketing sites and accessible components for enterprise clients.</p>
+          <h3>Developer Advocate — Company B</h3>
+          <span class="muted">2021 — 2023</span>
+          <p>Worked on product communication, docs, workshops, and developer onboarding.</p>
         </div>
+
         <div class="resume-item">
-          <h3>BSc Computer Science — University</h3>
+          <h3>BSc Computer Science</h3>
           <span class="muted">2017 — 2020</span>
-          <p>Graduated with First Class honours. Focus on web technologies and human-computer interaction.</p>
+          <p>Graduated with focus on software engineering and cloud systems.</p>
         </div>
+
       </div>
-      <a class="btn" href="#" download="PrineetKaur-Resume.pdf">Download Resume (sample)</a>
     </section>
 
-    <!-- Skills -->
+    <!-- SKILLS -->
     <section id="skills" class="section">
       <h2 class="section-title">Skills</h2>
+
       <div class="skills-grid">
+
         <div class="skill">
-          <div class="skill-head">
-            <strong>HTML &amp; CSS</strong><span>90%</span>
-          </div>
-          <div class="bar"><span style="width:90%"></span></div>
+          <div class="skill-head"><strong>DevOps</strong><span>85%</span></div>
+          <div class="bar"><span style="width: 85%"></span></div>
         </div>
+
         <div class="skill">
-          <div class="skill-head">
-            <strong>JavaScript</strong><span>85%</span>
-          </div>
-          <div class="bar"><span style="width:85%"></span></div>
+          <div class="skill-head"><strong>Documentation</strong><span>95%</span></div>
+          <div class="bar"><span style="width: 95%"></span></div>
         </div>
+
         <div class="skill">
-          <div class="skill-head">
-            <strong>React</strong><span>75%</span>
-          </div>
-          <div class="bar"><span style="width:75%"></span></div>
+          <div class="skill-head"><strong>Cloud & Infra</strong><span>75%</span></div>
+          <div class="bar"><span style="width: 75%"></span></div>
         </div>
+
         <div class="skill">
-          <div class="skill-head">
-            <strong>UI / UX</strong><span>80%</span>
-          </div>
-          <div class="bar"><span style="width:80%"></span></div>
+          <div class="skill-head"><strong>Developer Experience</strong><span>90%</span></div>
+          <div class="bar"><span style="width: 90%"></span></div>
         </div>
+
       </div>
     </section>
 
-    <!-- Projects -->
+    <!-- PROJECTS -->
     <section id="projects" class="section">
       <h2 class="section-title">Projects</h2>
+
       <div class="cards">
-        <article class="card">
-          <img src="/mnt/data/IMG_08073383-CCFA-4DAF-9262-942F063BFCA2.jpeg" alt="Project 1" />
-          <h3>Portfolio Website</h3>
-          <p>A polished personal site with a static CMS and animations.</p>
-          <a class="link" href="#">View Project →</a>
-        </article>
 
-        <article class="card">
-          <img src="/mnt/data/IMG_08073383-CCFA-4DAF-9262-942F063BFCA2.jpeg" alt="Project 2" />
-          <h3>Landing Page UI</h3>
-          <p>Marketing landing page with complex responsive interactions.</p>
-          <a class="link" href="#">View Project →</a>
-        </article>
-
-        <article class="card">
-          <img src="/mnt/data/IMG_08073383-CCFA-4DAF-9262-942F063BFCA2.jpeg" alt="Project 3" />
-          <h3>Accessible Components</h3>
-          <p>Design system components built with accessibility and testing in mind.</p>
-          <a class="link" href="#">View Project →</a>
-        </article>
-      </div>
-    </section>
-
-    <!-- Blogs -->
-    <section id="blogs" class="section">
-      <h2 class="section-title">Blogs</h2>
-      <div class="blog-list">
-        <article class="blog">
-          <h3>Design systems: starting small</h3>
-          <p class="muted">Feb 12, 2025 — 5 min read</p>
-          <p>Intro to building reusable UI libraries and how to bootstrap a tiny design system.</p>
-          <a class="link" href="#">Read →</a>
-        </article>
-
-        <article class="blog">
-          <h3>Performance budgeting for beginners</h3>
-          <p class="muted">Jan 8, 2025 — 7 min read</p>
-          <p>Simple techniques to keep your pages fast.</p>
-          <a class="link" href="#">Read →</a>
-        </article>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <h2 class="section-title">Contact</h2>
-      <div class="contact-grid">
-        <div>
-          <h3>Get in touch</h3>
-          <p>Email: <a href="mailto:may@example.com">bhurji.pk@gmail.com</a></p>
-          <p>Address: Paris, France</p>
-          <p>Phone: +33 758349129</p>
+        <div class="card">
+          <img src="assets/img/myphoto.jpeg" alt="Project 1">
+          <h3>Internal Dev Portal</h3>
+          <p>A portal enabling self-service for engineering teams.</p>
         </div>
 
-        <form id="contactForm" class="contact-form">
-          <label>
-            <span>Name</span>
-            <input type="text" name="name" required />
+        <div class="card">
+          <img src="assets/img/myphoto.jpeg" alt="Project 2">
+          <h3>Observability Dashboard</h3>
+          <p>A project showing golden signals and service performance trends.</p>
+        </div>
+
+        <div class="card">
+          <img src="assets/img/myphoto.jpeg" alt="Project 3">
+          <h3>Docs-as-Code System</h3>
+          <p>Automated docs pipeline powered by markdown and GitHub Actions.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BLOGS -->
+    <section id="blogs" class="section">
+      <h2 class="section-title">Blogs</h2>
+
+      <div class="blog-list">
+        <div class="blog">
+          <h3>Scaling Developer Experience</h3>
+          <p class="muted">Jan 2025 – 6 min read</p>
+          <p>What it takes to build great DevEx for 100+ engineering teams.</p>
+        </div>
+
+        <div class="blog">
+          <h3>Understanding Observability</h3>
+          <p class="muted">Dec 2024 – 5 min read</p>
+          <p>A practical guide to metrics, logs, traces, and alerting.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="contact-grid">
+
+        <div>
+          <h3>Get in touch</h3>
+          <p>Email: <a href="mailto:may@example.com">may@example.com</a></p>
+          <p>Location: London, UK</p>
+        </div>
+
+        <form id="contactForm" method="POST">
+          <label>Name
+            <input type="text" name="name" required>
           </label>
 
-          <label>
-            <span>Email</span>
-            <input type="email" name="email" required />
+          <label>Email
+            <input type="email" name="email" required>
           </label>
 
-          <label>
-            <span>Message</span>
+          <label>Message
             <textarea name="message" rows="5" required></textarea>
           </label>
 
-          <!-- Formspree example endpoint (replace with your own or handle server-side) -->
-          <input type="hidden" name="_subject" value="New contact from portfolio" />
           <button type="submit" class="btn">Send Message</button>
-          <p id="formStatus" class="muted" aria-live="polite"></p>
+          <p id="formStatus" class="muted"></p>
         </form>
+
       </div>
     </section>
 
     <footer class="site-footer">
-      <p>Built with ❤️ PK Techfolio </p>
+      <p>PK Techfolio...Built with ❤️ using Github.</p>
     </footer>
+
   </main>
 
   <script src="script.js"></script>
 </body>
+
 </html>
