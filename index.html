@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prineet Techfolio</title>
+  <title>Prineet's Techfolio</title>
 
   <link rel="stylesheet" href="style.css">
 
-  <!-- Typed.js for typing animation -->
+  <!-- Typed.js -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 
@@ -20,6 +20,16 @@
       <img src="assets/img/mylogo.jpg" alt="Profile Photo">
       <h2>Prineet Kaur</h2>
       <p class="role">Tech Product Enabler and Communicator</p>
+    </div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="social-icons">
+      <a href="https://linkedin.com" target="_blank"><img src="assets/icons/linkedin.png"></a>
+      <a href="https://github.com" target="_blank"><img src="assets/icons/github.png"></a>
+      <a href="https://medium.com" target="_blank"><img src="assets/icons/medium.png"></a>
+      <a href="https://substack.com" target="_blank"><img src="assets/icons/substack.png"></a>
+      <a href="https://instagram.com" target="_blank"><img src="assets/icons/instagram.png"></a>
+      <a href="mailto:bhurji.pk@gmail.com"><img src="assets/icons/gmail.png"></a>
     </div>
 
     <nav class="nav">
@@ -40,14 +50,13 @@
   <!-- Main Content -->
   <main class="main">
 
-    <!-- HERO SECTION -->
+    <!-- HERO -->
     <section id="home" class="hero">
 
       <div class="hero-bg"></div>
       <div class="hero-overlay"></div>
 
       <div class="hero-content">
-
         <h1><span class="accent">Prineet Kaur</span></h1>
 
         <h2>
@@ -64,7 +73,6 @@
           <a href="#projects" class="btn">View Projects</a>
           <a href="#contact" class="btn-outline">Contact Me</a>
         </div>
-
       </div>
 
     </section>
@@ -74,8 +82,7 @@
       <h2 class="section-title">About</h2>
       <p>
         I’m a passionate developer and product communicator with experience across DevOps, Developer Experience,
-        Observability and infrastructure platforms. I love simplifying complex tech so teams can adopt, implement, and
-        innovate faster.
+        Observability and infrastructure platforms.
       </p>
     </section>
 
@@ -149,13 +156,13 @@
         <div class="card">
           <img src="assets/img/myphoto.jpeg" alt="Project 2">
           <h3>Observability Dashboard</h3>
-          <p>A project showing golden signals and service performance trends.</p>
+          <p>Golden signals and performance insights.</p>
         </div>
 
         <div class="card">
           <img src="assets/img/myphoto.jpeg" alt="Project 3">
           <h3>Docs-as-Code System</h3>
-          <p>Automated docs pipeline powered by markdown and GitHub Actions.</p>
+          <p>Automated docs pipeline powered by markdown.</p>
         </div>
 
       </div>
@@ -169,7 +176,7 @@
         <div class="blog">
           <h3>Scaling Developer Experience</h3>
           <p class="muted">Jan 2025 – 6 min read</p>
-          <p>What it takes to build great DevEx for 100+ engineering teams.</p>
+          <p>What it takes to build great DevEx for 100+ teams.</p>
         </div>
 
         <div class="blog">
@@ -180,34 +187,29 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section">
+    <!-- CONTACT — FINAL VERSION MATCHING ANSABABY -->
+    <section id="contact" class="section contact-section">
       <h2 class="section-title">Contact</h2>
 
-      <div class="contact-grid">
+      <div class="contact-container">
 
-        <div>
+        <div class="contact-info">
           <h3>Get in touch</h3>
-          <p>Email: <a href="mailto:may@example.com">may@example.com</a></p>
-          <p>Location: London, UK</p>
+
+          <p><strong>Email:</strong> <a href="mailto:yourgmail@gmail.com">yourgmail@gmail.com</a></p>
+          <p><strong>Location:</strong> London, UK</p>
+
+          <br>
+
+          <a href="mailto:yourgmail@gmail.com" class="btn contact-btn">Let's Connect</a>
         </div>
 
-        <form id="contactForm" method="POST">
-          <label>Name
-            <input type="text" name="name" required>
-          </label>
-
-          <label>Email
-            <input type="email" name="email" required>
-          </label>
-
-          <label>Message
-            <textarea name="message" rows="5" required></textarea>
-          </label>
-
-          <button type="submit" class="btn">Send Message</button>
-          <p id="formStatus" class="muted"></p>
-        </form>
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19801.853008410625!2d-0.1357!3d51.509865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b3339a2!2sLondon!5e0!3m2!1sen!2suk!4v1700000000"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
 
       </div>
     </section>
