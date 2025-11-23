@@ -534,6 +534,9 @@ a.contact-btn {
 }
 
 /* Contact box border */
+.contact-left {
+  border: 2px solid var(--mustard) !important;
+}
 .contact-right {
   border: 2px solid var(--mustard) !important;
 }
@@ -544,10 +547,6 @@ a.contact-btn {
   height: 130px;
   object-fit: cover;
   border-radius: 50%;
-  padding: 8px;
-  background: #1e1e1e;     /* soft grey background behind picture */
-  border: 2px solid #333;   /* subtle outline */
-  box-shadow: 0 0 10px rgba(0,0,0,0.4); /* smooth shadow */
 }
 
 /* Social media icons circle effect */
