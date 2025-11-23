@@ -309,9 +309,8 @@ body {
   border: 0;
 }
 
-
 /* ============================================================
-   14. SOCIAL ICONS
+   14. SOCIAL ICONS (MATCH NAV ICON STYLE)
 ============================================================ */
 .social-icons {
   display: flex;
@@ -320,15 +319,20 @@ body {
 }
 
 .social-icons img {
-  filter: none !important;
-  width: 26px;
-  height: 26px;
+  width: 18px; /* match nav icon size */
+  height: 18px;
+  filter: brightness(0) saturate(100%)
+          invert(72%) sepia(40%) saturate(500%)
+          hue-rotate(10deg);
   transition: 0.2s;
 }
 
 .social-icons img:hover {
   transform: scale(1.1);
 }
+
+
+
 
 
 /* ============================================================
