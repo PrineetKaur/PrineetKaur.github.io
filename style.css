@@ -61,6 +61,16 @@ body {
 .profile h2 { margin: 10px 0 4px; font-size: 20px; }
 .profile .role { font-size: 13px; color: #cfcfcf; }
 
+.profile {
+  text-align: center;
+  width: 100%;
+}
+
+.profile img {
+  display: block;
+  margin: 0 auto;
+}
+
 
 /* ============================================================
    4. NAVIGATION
@@ -301,7 +311,7 @@ body {
 
 
 /* ============================================================
-   14. SOCIAL ICONS (FIXED — ONLY THIS BLOCK EXISTS)
+   14. SOCIAL ICONS
 ============================================================ */
 .social-icons {
   display: flex;
@@ -310,6 +320,7 @@ body {
 }
 
 .social-icons img {
+  filter: none !important;
   width: 26px;
   height: 26px;
   transition: 0.2s;
