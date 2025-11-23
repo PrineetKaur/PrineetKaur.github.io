@@ -447,3 +447,93 @@ body{
     grid-template-columns: 1fr;
   }
 }
+
+/* -------------------------
+    GLOBAL THEME COLORS
+-------------------------- */
+:root {
+  --bg-black: #000;
+  --bg-darkgrey: #111;
+  --bg-box: #1b1b1b;
+  --text-white: #ffffff;
+  --text-lightgrey: #d1d1d1;
+  --mustard: #CFB53B;
+}
+
+/* Body */
+body {
+  background: var(--bg-black);
+  color: var(--text-white);
+}
+
+/* Section Titles */
+.section-title {
+  color: var(--text-lightgrey) !important;
+  border-left: 4px solid var(--mustard);
+  padding-left: 10px;
+  margin-bottom: 25px;
+}
+
+/* Boxes inside sections */
+.section {
+  background: var(--bg-darkgrey);
+  padding: 50px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+/* Inner content boxes */
+.box,
+.contact-left,
+.contact-right {
+  background: var(--bg-box) !important;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+/* Buttons */
+.btn,
+.btn-outline,
+.contact-btn,
+a.btn,
+a.contact-btn {
+  background: var(--mustard) !important;
+  color: #000 !important;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 12px 28px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover,
+.btn-outline:hover,
+.contact-btn:hover {
+  box-shadow: 0 0 15px var(--mustard);
+  transform: translateY(-2px);
+}
+
+/* Icons beside section labels */
+.section-title-icon {
+  color: var(--mustard);
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+/* Sidebar navigation */
+.nav-link {
+  color: var(--text-lightgrey) !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-link img.icon {
+  width: 18px;
+  filter: brightness(0) saturate(100%) invert(72%) sepia(57%) saturate(700%) hue-rotate(9deg) brightness(90%) contrast(90%);
+}
+
+/* Contact box border */
+.contact-right {
+  border: 2px solid var(--mustard) !important;
+}
