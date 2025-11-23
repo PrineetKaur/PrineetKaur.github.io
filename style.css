@@ -537,3 +537,141 @@ a.contact-btn {
 .contact-right {
   border: 2px solid var(--mustard) !important;
 }
+
+/* Profile image circle effect */
+.sidebar .profile img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 8px;
+  background: #1e1e1e;     /* soft grey background behind picture */
+  border: 2px solid #333;   /* subtle outline */
+  box-shadow: 0 0 10px rgba(0,0,0,0.4); /* smooth shadow */
+}
+
+/* Social media icons circle effect */
+.social-icons img {
+  width: 28px;
+  height: 28px;
+  padding: 6px;
+  border-radius: 50%;
+  background: #1e1e1e;     /* same soft grey background */
+  border: 1px solid #333;  /* very subtle border */
+  filter: brightness(0) invert(70%); /* light grey icon color */
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.social-icons img:hover {
+  background: #333;
+  border-color: #C4A64A;  /* mustard border on hover */
+  filter: brightness(1) saturate(1); /* normal icon */
+}
+
+
+
+/* ============================
+   FINAL THEME COLORS
+============================ */
+:root {
+  --mustard: #C4A64A;      /* subtle gold */
+  --grey-label: #999999;   /* soft grey for subheadings */
+  --bg-black: #000;
+  --bg-dark: #111;
+  --bg-box: #1b1b1b;
+  --text-lightgrey: #d1d1d1;
+  --text-white: #ffffff;
+}
+
+/* ============================
+   BASE BACKGROUND
+============================ */
+body {
+  background: var(--bg-black);
+  color: var(--text-white);
+}
+
+/* ============================
+   SECTION BOXES
+============================ */
+.section {
+  background: var(--bg-dark);
+  padding: 50px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+/* Inner boxes */
+.box,
+.contact-left,
+.contact-right {
+  background: var(--bg-box);
+  border-radius: 12px;
+  padding: 30px;
+}
+
+/* ============================
+   SECTION TITLES
+============================ */
+.section-title {
+  color: var(--text-lightgrey);
+  border-left: 4px solid var(--mustard);
+  padding-left: 10px;
+  margin-bottom: 25px;
+}
+
+/* ============================
+   SUBHEADINGS (skills, projects, blogs)
+============================ */
+.skill .skill-head strong,
+.resume-item h3,
+.card h3,
+.blog h3 {
+  color: var(--grey-label) !important;
+}
+
+/* ============================
+   BUTTONS
+============================ */
+.btn,
+.btn-outline,
+.contact-btn,
+a.btn,
+a.contact-btn {
+  background: var(--mustard) !important;
+  color: black !important;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 12px 28px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover,
+.contact-btn:hover {
+  box-shadow: 0 0 12px var(--mustard);
+  transform: translateY(-2px);
+}
+
+/* ============================
+   SKILL BARS
+============================ */
+.bar span {
+  background: var(--mustard) !important;
+}
+
+/* ============================
+   SIDEBAR NAVIGATION
+============================ */
+.nav-link {
+  color: var(--text-lightgrey);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-link:hover {
+  color: var(--mustard);
+}
+
