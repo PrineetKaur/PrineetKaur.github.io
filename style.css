@@ -310,30 +310,32 @@ body {
 }
 
 /* ============================================================
-   14. SOCIAL ICONS (MATCH NAV ICON STYLE)
+   14. SOCIAL ICONS 
 ============================================================ */
 .social-icons {
   display: flex;
-  gap: 10px;
+  flex-direction: column; /* keep them stacked like the other nav icons */
+  gap: 16px;              /* more spacing since only 5 */
   margin: 10px 0 18px;
+  width: 100%;
+  align-items: center;    /* center them under profile pic */
 }
 
 .social-icons img {
-  width: 18px; /* match nav icon size */
-  height: 18px;
+  width: 28px;            
+  height: 28px;
+  
   filter: brightness(0) saturate(100%)
-          invert(72%) sepia(40%) saturate(500%)
-          hue-rotate(10deg);
-  transition: 0.2s;
+          invert(75%) sepia(0%) saturate(0%)
+          hue-rotate(180deg) brightness(90%);
+          
+  transition: 0.25s;
 }
 
 .social-icons img:hover {
-  transform: scale(1.1);
+  transform: scale(1.18);
+  opacity: 0.85;
 }
-
-
-
-
 
 /* ============================================================
    15. FOOTER
