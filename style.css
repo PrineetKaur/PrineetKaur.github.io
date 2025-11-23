@@ -312,13 +312,15 @@ body {
 /* ============================================================
    14. SOCIAL ICONS 
 ============================================================ */
+
 .social-icons {
   display: flex;
-  flex-direction: column; /* keep them stacked like the other nav icons */
-  gap: 16px;              /* more spacing since only 5 */
+  flex-direction: row;   
+  gap: 14px;             
   margin: 10px 0 18px;
   width: 100%;
-  align-items: center;    /* center them under profile pic */
+  justify-content: flex-start; /* NOT centered */
+  align-items: center;
 }
 
 .social-icons img {
