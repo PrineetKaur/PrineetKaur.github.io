@@ -339,8 +339,8 @@ body {
 
 /* increased icon size inside */
 .social-icons img {
-  width: 28px;   /* reduced icon size */
-  height: 28px;  /* reduced icon size */
+  width: 32px;   /* reduced icon size */
+  height: 32px;  /* reduced icon size */
   filter: brightness(0) invert(1);
   transition: 0.25s;
 }
