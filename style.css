@@ -319,10 +319,10 @@ html, body {
   padding: 30px;
   border-radius: 12px;
   border: 2px solid var(--mustard);
-  color: var(--text-white);
+  color: var(--text-lightgrey);
 }
 
-.contact-left,
+.contact-left h3 { color: var(--grey-label) !important; }
 .contact-right h3 { color: var(--grey-label) !important; }
 
 .contact-left iframe,
