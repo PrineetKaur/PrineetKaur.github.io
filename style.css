@@ -310,20 +310,20 @@ body {
 
 
 /* ============================================================
-   14. SOCIAL ICONS — ICONS BIGGER, CIRCLE SAME SIZE
+   14. SOCIAL ICONS — SMALLER ICONS + CLOSER TOGETHER
 ============================================================ */
 
 .social-icons {
   display: flex;
-  gap: 14px;
+  gap: 8px;  /* reduced gap between icons */
   justify-content: center;
   align-items: center;
 }
 
-/* keep circle same size */
+/* smaller circle size */
 .social-icons a {
-  width: 42px;
-  height: 42px;
+  width: 36px;  /* decreased circle size */
+  height: 36px; /* decreased circle size */
   background: #2b2b2b;
   border-radius: 50%;
   display: flex;
@@ -337,10 +337,10 @@ body {
   transform: scale(1.12);
 }
 
-/* bigger icons inside (only this changed) */
+/* increased icon size inside */
 .social-icons img {
-  width: 28px;   /* increased from 22px */
-  height: 28px;  /* increased from 22px */
+  width: 24px;   /* reduced icon size */
+  height: 24px;  /* reduced icon size */
   filter: brightness(0) invert(1);
   transition: 0.25s;
 }
@@ -348,6 +348,7 @@ body {
 .social-icons a:hover img {
   filter: brightness(0);
 }
+
 
 /* ============================================================
    15. FOOTER
