@@ -184,9 +184,8 @@ html, body {
   text-align: center;
 }
 
-.hero h1 { font-size: 48px; margin-bottom: 10px; }
-.hero h2 { font-size: 26px; font-weight: 300; margin-bottom: 60px; }
-.hero-desc { font-size: 18px; margin-bottom: 25px; color: var(--text-lightgrey); }
+.hero h1 { font-size: 48px; margin-bottom: 5px; }
+.hero h2 { font-size: 26px; font-weight: 400; margin-bottom: 40px; }
 
 
 /* ============================================================
