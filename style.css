@@ -108,15 +108,16 @@ body {
   transition: 0.25s ease;
 }
 
-/* Hover effect: Apply lighter mustard color without turning yellow */
+/* Hover effect: Apply mustard color with same brightness level */
 .nav-link:hover img.icon {
-  filter: brightness(0) saturate(100%) invert(78%) sepia(61%) saturate(400%) hue-rotate(10deg) brightness(70%); /* Adjusted to lighter mustard */
+  filter: brightness(0) saturate(100%) invert(78%) sepia(61%) saturate(500%) hue-rotate(10deg) brightness(80%); /* Adjusted for true mustard tone */
 }
 
 .nav-link.active {
   background: rgba(255,255,255,0.08);
   color: var(--text-white);
 }
+
 
 /* ============================================================
    5. MAIN WRAPPER
