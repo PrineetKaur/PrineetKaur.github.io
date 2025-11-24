@@ -14,17 +14,16 @@
   --max-width: 1100px;
 }
 
-
 /* ============================================================
    2. GLOBAL STYLES
 ============================================================ */
-* { box-sizing: border-box; }
-html, body { height: 100%; }
+* {box-sizing: border-box;}
 
-body {
+html, body {
+  height: 100%;
   margin: 0;
   font-family: Inter, system-ui, sans-serif;
-  color: var(--text-white);
+  color: var(--text-lightgrey); /* Default text color set to light grey */
   background: linear-gradient(180deg, #000 0%, #111 50%, #1a1a1a 100%);
   -webkit-font-smoothing: antialiased;
 }
