@@ -23,7 +23,7 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: Inter, system-ui, sans-serif;
-  color: var(--text-lightgrey); /* Default text color set to light grey */
+  color: var(--text-white); /* Default text color set to white */
   background: linear-gradient(180deg, #000 0%, #111 50%, #1a1a1a 100%);
   -webkit-font-smoothing: antialiased;
 }
@@ -60,7 +60,7 @@ html, body {
 .profile h2 {
   margin: 10px 0 4px;
   font-size: 20px;
-  color: var(--text-white); /* Keep headings white */
+  color: var(--text-lightgrey); /* Keep headings white */
 }
 
 .profile .role {
@@ -78,6 +78,10 @@ html, body {
   margin: 0 auto;
 }
 
+.heading.quote p {
+  color: var(--text-lightgrey); /* Set text color to light grey */
+  text-align: center; /* Horizontally center-align the text */
+}
 
 /* ============================================================
    4. NAVIGATION — LIGHT GREY ICONS, MUSTARD HOVER + TEXT STYLING
@@ -315,7 +319,7 @@ html, body {
   padding: 30px;
   border-radius: 12px;
   border: 2px solid var(--mustard);
-  color: var(--text-lightgrey);
+  color: var(--text-white);
 }
 
 .contact-left,
