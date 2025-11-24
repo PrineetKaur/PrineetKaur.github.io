@@ -8,7 +8,8 @@
   --bg-dark: #111;
   --bg-box: #1b1b1b;
   --text-white: #ffffff;
-  --text-lightgrey: #d1d1d1; /* Very light grey */
+  --text-lightgrey: #d1d1d1;
+
   --sidebar-width: 300px;
   --max-width: 1100px;
 }
@@ -17,15 +18,13 @@
 /* ============================================================
    2. GLOBAL STYLES
 ============================================================ */
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
 
-html, body {
-  height: 100%;
+body {
   margin: 0;
   font-family: Inter, system-ui, sans-serif;
-  color: var(--text-lightgrey); /* Default text color set to light grey */
+  color: var(--text-white);
   background: linear-gradient(180deg, #000 0%, #111 50%, #1a1a1a 100%);
   -webkit-font-smoothing: antialiased;
 }
@@ -59,16 +58,340 @@ html, body {
   box-shadow: 0 6px 20px rgba(0,0,0,0.4);
 }
 
-.profile h2 {
-  margin: 10px 0 4px;
-  font-size: 20px;
-  color: var(--text-white); /* Keep headings white */
-}
-
-.profile .role {
-  font-size: 13px;
-  color: var(--text-lightgrey); /* Light grey for role text */
-}
+.profile h2 { margin: 10px 0 4px; font-size: 20px; }
+.profile .role { font-size: 13px; color: #cfcfcf; }
 
 .profile {
-  text-align:
+  text-align: center;
+  width: 100%;
+}
+
+.profile img { display: block; margin: 0 auto; }
+
+
+/* ============================================================
+   4. NAVIGATION — LIGHT GREY ICONS, MUSTARD HOVER + TEXT STYLING
+============================================================ */
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 300;  /* thinner text */
+  color: var(--text-lightgrey); /* light grey text */
+  text-decoration: none;
+  transition: 0.2s ease;
+  background: transparent !important; /* no background */
+}
+
+.nav-link:hover {
+  transform: translateX(6px);
+  color: var(--text-white); /* white text on hover */
+  font-weight: 600;  /* bold text on hover */
+}
+
+/* ICONS: Light grey outline when not hovered, mustard color on hover */
+.nav-link img.icon {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) saturate(100%) invert(78%) sepia(61%) saturate(200%) hue-rotate(10deg) brightness(50%); /* very light grey outline */
+  transition: 0.25s ease;
+}
+
+/* Hover effect: Apply a slightly lighter mustard color */
+.nav-link:hover img.icon {
+  filter: brightness(0) saturate(100%) invert(65%) sepia(61%) saturate(350%) hue-rotate(10deg) brightness(90%); /* Lightened mustard */
+}
+
+.nav-link.active {
+  background: rgba(255,255,255,0.08);
+  color: var(--text-white);
+}
+
+
+/* ============================================================
+   5. MAIN WRAPPER
+============================================================ */
+.main {
+  margin-left: var(--sidebar-width);
+  min-height: 100vh;
+  max-width: var(--max-width);
+  margin-right: auto;
+}
+
+
+/* ====================================================================
+   6. HERO SECTION
+============================================================ */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("assets/img/myphoto.jpeg");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(3px);
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 700px;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero h1 { font-size: 48px; margin-bottom: 10px; }
+.hero h2 { font-size: 26px; font-weight: 300; margin-bottom: 20px; }
+.hero-desc { font-size: 18px; margin-bottom: 25px; }
+
+
+/* ============================================================
+   7. BUTTONS
+============================================================ */
+.btn, .btn-outline, .contact-btn, a.btn, a.contact-btn {
+  background: var(--mustard) !important;
+  color: black !important;
+  font-weight: 700;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-outline {
+  background: transparent !important;
+  border: 2px solid var(--mustard);
+  color: var(--mustard) !important;
+}
+
+.btn:hover, .contact-btn:hover {
+  box-shadow: 0 0 12px var(--mustard);
+  transform: translateY(-2px);
+}
+
+
+/* ============================================================
+   8. SECTIONS
+============================================================ */
+.section {
+  padding: 50px;
+  background: var(--bg-dark);
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 22px;
+  color: var(--text-lightgrey);
+  margin-bottom: 25px;
+  border-left: 4px solid var(--mustard);
+  padding-left: 10px;
+}
+
+
+/* ============================================================
+   9. RESUME
+============================================================ */
+.resume-grid { display: grid; gap: 12px; }
+
+.resume-item {
+  background: var(--bg-box);
+  padding: 14px;
+  border-radius: 10px;
+  color: #e6e6e6;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+.resume-item h3 { color: var(--grey-label) !important; }
+
+
+/* ============================================================
+   10. SKILLS
+============================================================ */
+.skills-grid { display: grid; gap: 12px; }
+
+.skill .skill-head {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  color: var(--grey-label) !important;
+}
+
+.bar {
+  background: #333;
+  height: 12px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bar span {
+  display: block;
+  height: 100%;
+  background: var(--mustard);
+}
+
+
+/* ============================================================
+   11. PROJECT CARDS
+============================================================ */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: var(--bg-box);
+  padding: 12px;
+  border-radius: 10px;
+  color: #ddd;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+
+.card h3 { color: var(--grey-label) !important; }
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+/* ============================================================
+   12. BLOG
+============================================================ */
+.blog h3 { color: var(--grey-label) !important; }
+
+
+/* ============================================================
+   13. CONTACT SECTION
+============================================================ */
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+}
+
+.contact-left,
+.contact-right {
+  background: var(--bg-box);
+  padding: 30px;
+  border-radius: 12px;
+  border: 2px solid var(--mustard);
+}
+
+.contact-left iframe,
+.contact-right iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  border: 0;
+}
+
+
+/* ============================================================
+   14. SOCIAL ICONS — SMALLER ICONS + CLOSER TOGETHER
+============================================================ */
+
+.social-icons {
+  display: flex;
+  gap: 8px;  /* reduced gap between icons */
+  justify-content: center;
+  align-items: center;
+}
+
+/* icon circle size */
+.social-icons a {
+  width: 42px;  
+  height: 42px; 
+  background: #2b2b2b;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.25s;
+}
+
+.social-icons a:hover {
+  background: var(--mustard);
+  transform: scale(1.12);
+}
+
+/* increased icon size inside */
+.social-icons img {
+  width: 36px;   /* reduced icon size */
+  height: 36px;  /* reduced icon size */
+  filter: brightness(0) invert(1);
+  transition: 0.25s;
+}
+
+.social-icons a:hover img {
+  filter: brightness(0);
+}
+
+
+/* ============================================================
+   15. FOOTER
+============================================================ */
+.site-footer {
+  margin-top: 28px;
+  padding: 20px 0;
+  text-align: center;
+  color: #8d8d8d;
+}
+
+
+/* ============================================================
+   16. RESPONSIVE
+============================================================ */
+@media (max-width: 980px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .profile img {
+    width: 56px;
+    height: 56px;
+  }
+
+  .main { margin-left: 0; }
+
+  .hero h1 { font-size: 32px; }
+  .hero h2 { font-size: 20px; }
+  .hero-desc { font-size: 16px; }
+
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
