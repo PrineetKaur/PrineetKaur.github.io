@@ -110,7 +110,6 @@ html, body {
   font-weight: 600;  /* bold text on hover */
 }
 
-/* ICONS: Light grey outline when not hovered, mustard color on hover */
 .nav-link img.icon {
   width: 24px;
   height: 24px;
@@ -118,7 +117,6 @@ html, body {
   transition: 0.25s ease;
 }
 
-/* Hover effect: Apply a slightly lighter mustard color */
 .nav-link:hover img.icon {
   filter: brightness(0) saturate(100%) invert(65%) sepia(61%) saturate(350%) hue-rotate(10deg) brightness(90%); /* Lightened mustard */
 }
