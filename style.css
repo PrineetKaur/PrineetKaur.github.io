@@ -100,7 +100,7 @@ body {
   font-weight: 600;  /* bold text on hover */
 }
 
-/* ICONS: Light grey outline when not hovered, mustard outline on hover */
+/* ICONS: Light grey outline when not hovered, mustard color on hover */
 .nav-link img.icon {
   width: 24px;
   height: 24px;
@@ -108,17 +108,15 @@ body {
   transition: 0.25s ease;
 }
 
-/* Mustard color for icons on hover, matching var(--mustard) exactly */
+/* On hover: apply mustard color to icon (without turning into a square) */
 .nav-link:hover img.icon {
-  filter: none;  /* Remove all previous filters */
-  border: 2px solid var(--mustard);  /* Apply mustard color on hover */
+  filter: brightness(0) saturate(100%) invert(78%) sepia(61%) saturate(600%) hue-rotate(10deg) brightness(105%); /* mustard effect */
 }
 
 .nav-link.active {
   background: rgba(255,255,255,0.08);
   color: var(--text-white);
 }
-
 
 
 /* ============================================================
