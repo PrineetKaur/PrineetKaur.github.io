@@ -188,6 +188,37 @@ html, body {
 .hero h2 { font-size: 26px; font-weight: 300; margin-bottom: 20px; }
 .hero-desc { font-size: 18px; margin-bottom: 25px; color: var(--text-lightgrey); }
 
+/* ============================================================
+   6. HERO SECTION — Underline the typing text while keeping typing effect
+============================================================ */
+.hero h2 .typed {
+  position: relative; /* Position the text for the underline */
+  display: inline-block; /* Ensures the underline is just under the text */
+  color: var(--text-white); /* White text color for the typed text */
+}
+
+.hero h2 .typed::after {
+  content: ''; /* No actual text, just the underline */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Full width of the typed text */
+  height: 2px; /* Thickness of the underline */
+  background-color: var(--mustard); /* Mustard color for the underline */
+  transform: scaleX(0); /* Start with the underline hidden */
+  transform-origin: bottom right;
+  animation: typing-underline 1s ease-in-out forwards; /* Animation for underline */
+}
+
+/* Animation for the underline to appear as text types */
+@keyframes typing-underline {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 
 /* ============================================================
    7. BUTTONS
