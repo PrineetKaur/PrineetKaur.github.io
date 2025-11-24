@@ -221,6 +221,9 @@ html, body {
   padding-left: 10px;
 }
 
+.section p {
+  color: var(--text-lightgrey); /* Light grey for paragraph text */
+}
 
 /* ============================================================
    9. RESUME
@@ -231,7 +234,7 @@ html, body {
   background: var(--bg-box);
   padding: 14px;
   border-radius: 10px;
-  color: #e6e6e6;
+  color: var(--text-lightgrey); /* Light grey for resume text */
   box-shadow: 0 6px 18px rgba(0,0,0,0.4);
 }
 
@@ -312,6 +315,7 @@ html, body {
   padding: 30px;
   border-radius: 12px;
   border: 2px solid var(--mustard);
+  color: var(--text-lightgrey);
 }
 
 .contact-left iframe,
