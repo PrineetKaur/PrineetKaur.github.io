@@ -108,16 +108,15 @@ body {
   transition: 0.25s ease;
 }
 
-/* Hover effect: Adjust mustard color with a refined filter */
+/* Hover effect: Apply a slightly lighter mustard color */
 .nav-link:hover img.icon {
-  filter: brightness(0) saturate(100%) invert(65%) sepia(61%) saturate(400%) hue-rotate(10deg) brightness(80%); /* Adjust for true mustard tone */
+  filter: brightness(0) saturate(100%) invert(65%) sepia(61%) saturate(350%) hue-rotate(10deg) brightness(90%); /* Lightened mustard */
 }
 
 .nav-link.active {
   background: rgba(255,255,255,0.08);
   color: var(--text-white);
 }
-
 
 
 /* ============================================================
