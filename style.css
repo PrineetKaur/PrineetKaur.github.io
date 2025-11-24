@@ -70,7 +70,7 @@ body {
 
 
 /* ============================================================
-   4. NAVIGATION  (UPDATED!!!)
+   4. NAVIGATION — PURE WHITE ICONS, MUSTARD HOVER
 ============================================================ */
 .nav {
   display: flex;
@@ -90,6 +90,7 @@ body {
   color: var(--text-lightgrey);
   text-decoration: none;
   transition: 0.2s ease;
+  background: transparent !important; /* ensures NO background */
 }
 
 .nav-link:hover {
@@ -97,23 +98,17 @@ body {
   color: var(--mustard);
 }
 
-.nav-link.active {
-  background: rgba(255,255,255,0.08);
-  color: var(--text-white);
-}
-
-/* === SIDEBAR NAV ICONS — WHITE + MUSTARD HOVER === */
 .nav-link img.icon {
-  width: 20px;
-  height: 20px;
-  filter: brightness(0) invert(1);  /* makes icon white */
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1); /* white */
   transition: 0.25s ease;
 }
 
 .nav-link:hover img.icon {
   filter: brightness(0) saturate(100%)
           invert(78%) sepia(61%) saturate(600%)
-          hue-rotate(10deg) brightness(105%);  /* mustard */
+          hue-rotate(10deg) brightness(105%); /* mustard */
 }
 
 
@@ -128,7 +123,7 @@ body {
 }
 
 
-/* ============================================================
+/* ====================================================================
    6. HERO SECTION
 ============================================================ */
 .hero {
@@ -315,7 +310,7 @@ body {
 
 
 /* ============================================================
-   14. SOCIAL ICONS  (UPDATED!!!)
+   14. SOCIAL ICONS — ICONS BIGGER, CIRCLE SAME SIZE
 ============================================================ */
 
 .social-icons {
@@ -325,7 +320,7 @@ body {
   align-items: center;
 }
 
-/* circular background */
+/* keep circle same size */
 .social-icons a {
   width: 42px;
   height: 42px;
@@ -342,18 +337,17 @@ body {
   transform: scale(1.12);
 }
 
-/* ICONS turn white */
+/* bigger icons inside (only this changed) */
 .social-icons img {
-  width: 22px;
-  height: 22px;
+  width: 28px;   /* increased from 22px */
+  height: 28px;  /* increased from 22px */
   filter: brightness(0) invert(1);
   transition: 0.25s;
 }
 
 .social-icons a:hover img {
-  filter: brightness(0); /* mustard circle stays clean */
+  filter: brightness(0);
 }
-
 
 /* ============================================================
    15. FOOTER
