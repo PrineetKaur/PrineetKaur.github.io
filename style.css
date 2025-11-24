@@ -72,6 +72,7 @@ body {
 /* ============================================================
    4. NAVIGATION — LIGHT GREY ICONS, MUSTARD HOVER + TEXT STYLING
 ============================================================ */
+
 .nav {
   display: flex;
   flex-direction: column;
@@ -107,16 +108,15 @@ body {
   transition: 0.25s ease;
 }
 
-/* Hover effect: Apply a slightly lighter mustard color */
+/* Hover effect: Apply lighter mustard color without turning yellow */
 .nav-link:hover img.icon {
-  filter: brightness(0) saturate(100%) invert(78%) sepia(61%) saturate(600%) hue-rotate(10deg) brightness(85%); /* lighter mustard on hover */
+  filter: brightness(0) saturate(100%) invert(78%) sepia(61%) saturate(400%) hue-rotate(10deg) brightness(70%); /* Adjusted to lighter mustard */
 }
 
 .nav-link.active {
   background: rgba(255,255,255,0.08);
   color: var(--text-white);
 }
-
 
 /* ============================================================
    5. MAIN WRAPPER
