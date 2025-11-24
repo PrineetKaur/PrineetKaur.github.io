@@ -83,6 +83,13 @@ html, body {
   text-align: center; /* Horizontally center-align the text */
 }
 
+.heading.quote h3 {
+  color: var(--grey-label);          /* Grey label for the h3 text */
+  text-align: center;                /* Center-align the h3 text */
+  font-weight: 450;                  /* Optional: Keep heading style similar to other h3 headings */
+}
+
+
 /* ============================================================
    4. NAVIGATION — LIGHT GREY ICONS, MUSTARD HOVER + TEXT STYLING
 ============================================================ */
