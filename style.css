@@ -318,6 +318,9 @@ html, body {
   color: var(--text-lightgrey);
 }
 
+.contact-left,
+.contact-right h3 { color: var(--grey-label) !important; }
+
 .contact-left iframe,
 .contact-right iframe {
   width: 100%;
