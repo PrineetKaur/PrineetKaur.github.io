@@ -1,8 +1,8 @@
 /* ============================================================
-   ROOT VARIABLES (THEME COLORS & GLOBAL SCALES)
+   1. ROOT VARIABLES (THEME COLORS & GLOBAL SCALES)
 ============================================================ */
 :root {
-  --mustard: #C4A64A;        /* Your golden mustard */
+  --mustard: #C4A64A;        /* Subtle gold accent */
   --grey-label: #999999;
   --bg-black: #000;
   --bg-dark: #111;
@@ -16,7 +16,7 @@
 
 
 /* ============================================================
-   GLOBAL
+   2. GLOBAL STYLES
 ============================================================ */
 * { box-sizing: border-box; }
 html, body { height: 100%; }
@@ -31,7 +31,7 @@ body {
 
 
 /* ============================================================
-   SIDEBAR + PROFILE
+   3. SIDEBAR + PROFILE
 ============================================================ */
 .sidebar {
   position: fixed;
@@ -46,6 +46,7 @@ body {
   align-items: center;
   gap: 18px;
   border-right: 1px solid rgba(255,255,255,0.06);
+  z-index: 40;
 }
 
 .profile img {
@@ -57,13 +58,19 @@ body {
   box-shadow: 0 6px 20px rgba(0,0,0,0.4);
 }
 
-.profile { text-align: center; width: 100%; }
 .profile h2 { margin: 10px 0 4px; font-size: 20px; }
 .profile .role { font-size: 13px; color: #cfcfcf; }
 
+.profile {
+  text-align: center;
+  width: 100%;
+}
+
+.profile img { display: block; margin: 0 auto; }
+
 
 /* ============================================================
-   NAVIGATION (UPDATED)
+   4. NAVIGATION  (UPDATED!!!)
 ============================================================ */
 .nav {
   display: flex;
@@ -76,41 +83,42 @@ body {
 .nav-link {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   padding: 10px 14px;
   border-radius: 8px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--text-lightgrey);
   text-decoration: none;
-  transition: 0.25s ease;
+  transition: 0.2s ease;
 }
 
-/* NO background on hover */
 .nav-link:hover {
-  background: none;
-  transform: translateX(4px);
-  color: var(--text-white);
-  font-weight: 700;    /* bold white like her site */
+  transform: translateX(6px);
+  color: var(--mustard);
 }
 
-/* SIDEBAR ICONS — WHITE → MUSTARD */
+.nav-link.active {
+  background: rgba(255,255,255,0.08);
+  color: var(--text-white);
+}
+
+/* === SIDEBAR NAV ICONS — WHITE + MUSTARD HOVER === */
 .nav-link img.icon {
-  width: 22px;
-  height: 22px;
-  filter: brightness(0) invert(1); /* pure white */
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);  /* makes icon white */
   transition: 0.25s ease;
 }
 
 .nav-link:hover img.icon {
-  filter: brightness(0) saturate(200%)
-          invert(76%) sepia(33%) saturate(900%)
-          hue-rotate(10deg) brightness(105%);
-  /* exact mustard */
+  filter: brightness(0) saturate(100%)
+          invert(78%) sepia(61%) saturate(600%)
+          hue-rotate(10deg) brightness(105%);  /* mustard */
 }
 
 
 /* ============================================================
-   MAIN WRAPPER
+   5. MAIN WRAPPER
 ============================================================ */
 .main {
   margin-left: var(--sidebar-width);
@@ -121,7 +129,7 @@ body {
 
 
 /* ============================================================
-   HERO
+   6. HERO SECTION
 ============================================================ */
 .hero {
   position: relative;
@@ -162,9 +170,9 @@ body {
 
 
 /* ============================================================
-   BUTTONS
+   7. BUTTONS
 ============================================================ */
-.btn, .contact-btn, a.btn, a.contact-btn {
+.btn, .btn-outline, .contact-btn, a.btn, a.contact-btn {
   background: var(--mustard) !important;
   color: black !important;
   font-weight: 700;
@@ -174,6 +182,12 @@ body {
   transition: 0.3s;
 }
 
+.btn-outline {
+  background: transparent !important;
+  border: 2px solid var(--mustard);
+  color: var(--mustard) !important;
+}
+
 .btn:hover, .contact-btn:hover {
   box-shadow: 0 0 12px var(--mustard);
   transform: translateY(-2px);
@@ -181,7 +195,7 @@ body {
 
 
 /* ============================================================
-   SECTIONS
+   8. SECTIONS
 ============================================================ */
 .section {
   padding: 50px;
@@ -200,7 +214,7 @@ body {
 
 
 /* ============================================================
-   RESUME
+   9. RESUME
 ============================================================ */
 .resume-grid { display: grid; gap: 12px; }
 
@@ -216,7 +230,7 @@ body {
 
 
 /* ============================================================
-   SKILLS
+   10. SKILLS
 ============================================================ */
 .skills-grid { display: grid; gap: 12px; }
 
@@ -242,7 +256,7 @@ body {
 
 
 /* ============================================================
-   PROJECTS
+   11. PROJECT CARDS
 ============================================================ */
 .cards {
   display: grid;
@@ -269,13 +283,13 @@ body {
 
 
 /* ============================================================
-   BLOG
+   12. BLOG
 ============================================================ */
 .blog h3 { color: var(--grey-label) !important; }
 
 
 /* ============================================================
-   CONTACT
+   13. CONTACT SECTION
 ============================================================ */
 .contact-wrapper {
   display: grid;
@@ -301,8 +315,9 @@ body {
 
 
 /* ============================================================
-   SOCIAL ICONS (UPDATED)
+   14. SOCIAL ICONS  (UPDATED!!!)
 ============================================================ */
+
 .social-icons {
   display: flex;
   gap: 14px;
@@ -310,6 +325,7 @@ body {
   align-items: center;
 }
 
+/* circular background */
 .social-icons a {
   width: 42px;
   height: 42px;
@@ -323,24 +339,24 @@ body {
 
 .social-icons a:hover {
   background: var(--mustard);
-  transform: scale(1.15);
+  transform: scale(1.12);
 }
 
-/* Bigger inner icons */
+/* ICONS turn white */
 .social-icons img {
-  width: 28px;
-  height: 28px;
+  width: 22px;
+  height: 22px;
   filter: brightness(0) invert(1);
   transition: 0.25s;
 }
 
 .social-icons a:hover img {
-  filter: brightness(0); /* keeps icon dark on mustard background */
+  filter: brightness(0); /* mustard circle stays clean */
 }
 
 
 /* ============================================================
-   FOOTER
+   15. FOOTER
 ============================================================ */
 .site-footer {
   margin-top: 28px;
@@ -351,7 +367,7 @@ body {
 
 
 /* ============================================================
-   RESPONSIVE
+   16. RESPONSIVE
 ============================================================ */
 @media (max-width: 980px) {
   .sidebar {
