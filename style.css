@@ -86,7 +86,7 @@ html, body {
 .heading.quote h3 {
   color: var(--grey-label);          /* Grey label for the h3 text */
   text-align: center;                /* Center-align the h3 text */
-  font-weight: 450;                  /* Optional: Keep heading style similar to other h3 headings */
+  font-weight: 300;                  /* Optional: Keep heading style similar to other h3 headings */
 }
 
 
