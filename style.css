@@ -70,7 +70,7 @@ body {
 
 
 /* ============================================================
-   4. NAVIGATION — PURE WHITE ICONS, MUSTARD HOVER
+   4. NAVIGATION — LIGHT GREY ICONS, MUSTARD HOVER + TEXT STYLING
 ============================================================ */
 .nav {
   display: flex;
@@ -86,29 +86,35 @@ body {
   gap: 10px;
   padding: 10px 14px;
   border-radius: 8px;
-  font-weight: 600;
-  color: var(--text-lightgrey);
+  font-weight: 300;  /* thinner text */
+  color: var(--text-lightgrey); /* light grey text */
   text-decoration: none;
   transition: 0.2s ease;
-  background: transparent !important; /* ensures NO background */
+  background: transparent !important; /* no background */
 }
 
 .nav-link:hover {
   transform: translateX(6px);
-  color: var(--mustard);
+  color: var(--text-white); /* white text on hover */
+  font-weight: 600;  /* bold text on hover */
 }
 
+/* ICONS: Light grey outline when not hovered, mustard outline on hover */
 .nav-link img.icon {
-  width: 26px;
-  height: 26px;
-  filter: brightness(0) invert(1); /* white */
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) saturate(100%) invert(78%) sepia(61%) saturate(200%) hue-rotate(10deg) brightness(50%); /* very light grey outline */
   transition: 0.25s ease;
 }
 
+/* Change icon color to mustard on hover */
 .nav-link:hover img.icon {
-  filter: brightness(0) saturate(100%)
-          invert(78%) sepia(61%) saturate(600%)
-          hue-rotate(10deg) brightness(105%); /* mustard */
+  filter: brightness(0) saturate(100%) invert(78%) sepia(61%) saturate(600%) hue-rotate(10deg) brightness(105%); /* mustard outline */
+}
+
+.nav-link.active {
+  background: rgba(255,255,255,0.08);
+  color: var(--text-white);
 }
 
 
