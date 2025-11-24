@@ -244,6 +244,9 @@ html, body {
   transform: translateY(-2px);
 }
 
+.hero .btn, .hero .contact-btn {
+  margin-top: 40px; /* Adjust this value to your preference */
+}
 
 /* ============================================================
    8. SECTIONS
