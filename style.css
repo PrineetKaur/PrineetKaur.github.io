@@ -3,7 +3,7 @@
 ============================================================ */
 :root {
   --mustard: #C4A64A;        /* Subtle gold accent */
-  --grey-label: #999999;     /* Soft grey for subheadings */
+  --grey-label: #999999;
   --bg-black: #000;
   --bg-dark: #111;
   --bg-box: #1b1b1b;
@@ -66,14 +66,11 @@ body {
   width: 100%;
 }
 
-.profile img {
-  display: block;
-  margin: 0 auto;
-}
+.profile img { display: block; margin: 0 auto; }
 
 
 /* ============================================================
-   4. NAVIGATION
+   4. NAVIGATION  (UPDATED!!!)
 ============================================================ */
 .nav {
   display: flex;
@@ -86,13 +83,13 @@ body {
 .nav-link {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   padding: 10px 14px;
   border-radius: 8px;
   font-weight: 600;
   color: var(--text-lightgrey);
   text-decoration: none;
-  transition: 0.18s;
+  transition: 0.2s ease;
 }
 
 .nav-link:hover {
@@ -105,11 +102,18 @@ body {
   color: var(--text-white);
 }
 
+/* === SIDEBAR NAV ICONS — WHITE + MUSTARD HOVER === */
 .nav-link img.icon {
-  width: 18px;
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);  /* makes icon white */
+  transition: 0.25s ease;
+}
+
+.nav-link:hover img.icon {
   filter: brightness(0) saturate(100%)
-          invert(72%) sepia(40%) saturate(500%)
-          hue-rotate(10deg);
+          invert(78%) sepia(61%) saturate(600%)
+          hue-rotate(10deg) brightness(105%);  /* mustard */
 }
 
 
@@ -125,7 +129,7 @@ body {
 
 
 /* ============================================================
-   6. HERO SECTION  (FIXED IMAGE)
+   6. HERO SECTION
 ============================================================ */
 .hero {
   position: relative;
@@ -138,7 +142,7 @@ body {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url("assets/img/myphoto.jpeg"); /* RESTORED */
+  background-image: url("assets/img/myphoto.jpeg");
   background-size: cover;
   background-position: center;
   z-index: 1;
@@ -309,35 +313,47 @@ body {
   border: 0;
 }
 
+
 /* ============================================================
-   14. SOCIAL ICONS 
+   14. SOCIAL ICONS  (UPDATED!!!)
 ============================================================ */
 
 .social-icons {
   display: flex;
-  flex-direction: row;   
-  gap: 14px;             
-  margin: 10px 0 18px;
-  width: 100%;
-  justify-content: center; 
+  gap: 14px;
+  justify-content: center;
   align-items: center;
 }
 
-.social-icons img {
-  width: 28px;            
-  height: 28px;
-  
-  filter: brightness(0) saturate(100%)
-          invert(75%) sepia(0%) saturate(0%)
-          hue-rotate(180deg) brightness(90%);
-          
+/* circular background */
+.social-icons a {
+  width: 42px;
+  height: 42px;
+  background: #2b2b2b;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: 0.25s;
 }
 
-.social-icons img:hover {
-  transform: scale(1.18);
-  opacity: 0.85;
+.social-icons a:hover {
+  background: var(--mustard);
+  transform: scale(1.12);
 }
+
+/* ICONS turn white */
+.social-icons img {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) invert(1);
+  transition: 0.25s;
+}
+
+.social-icons a:hover img {
+  filter: brightness(0); /* mustard circle stays clean */
+}
+
 
 /* ============================================================
    15. FOOTER
@@ -377,5 +393,3 @@ body {
     grid-template-columns: 1fr;
   }
 }
-
-
