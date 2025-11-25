@@ -378,18 +378,21 @@ html, body {
   border: 0;
 }
 
-/* Style for the icons in the Contact Section */
 .contact-icon {
-  width: 20px;  /* Set the icon size */
-  height: 20px; /* Set the icon size */
+  width: 24px;  /* Adjust size if needed */
+  height: 24px; /* Adjust size if needed */
   margin-right: 10px; /* Space between icon and text */
   vertical-align: middle; /* Align icon with text */
+  background: var(--bg-box); /* Same background as the non-hover navigation icons */
+  border-radius: 50%; /* Make the icon background circular */
+  padding: 5px; /* Add some padding inside the icon */
+  transition: 0.3s ease; /* Add a smooth transition for hover effects */
 }
 
-/* Optional: Hover effect for icons */
 .contact-icon:hover {
-  filter: brightness(0) saturate(100%) invert(50%) sepia(50%) saturate(400%) hue-rotate(10deg);
+  background: var(--mustard); /* Change background to mustard on hover, like the nav icon hover effect */
 }
+
 
 /* ============================================================
    14. SOCIAL ICONS — SMALLER ICONS + CLOSER TOGETHER
