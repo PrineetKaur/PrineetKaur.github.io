@@ -383,7 +383,7 @@ html, body {
   align-items: center;
   position: relative;
   gap: 12px;
-  padding-left: 25px;  /* Add padding to the left to shift the icons and text a bit to the right */
+  padding-left: 15px;  /* Add padding to the left to shift the icons and text a bit to the right */
 }
 
 .info-header h3 {
@@ -391,8 +391,8 @@ html, body {
 }
 
 .contact-icon {
-  width: 42px;
-  height: 42px;
+  width: 46px;
+  height: 46px;
   position: center;   <!--absolute; -->
   left: -25px;  /* Move the icon a bit closer towards the center */
   background: var(--mustard); 
