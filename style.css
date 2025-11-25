@@ -281,7 +281,7 @@ html, body {
 .resume-grid { display: grid; gap: 12px; }
 
 .resume-item {
-  background: #e0e0e0;  /* Even lighter grey for resume items */
+  background: var(--bg-box);  
   padding: 14px;
   border-radius: 10px;
   color: var(--text-lightgrey);
@@ -326,7 +326,7 @@ html, body {
 }
 
 .card {
-  background:  #e0e0e0;  /* Even lighter grey for skill items */
+  background:  var(--bg-box); 
   padding: 12px;
   border-radius: 10px;
   color: #ddd;
