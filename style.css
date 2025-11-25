@@ -382,8 +382,8 @@ html, body {
   display: flex;
   align-items: center;
   position: relative;
-  gap: 2px;
-  padding-left: 25px; 
+  gap: 1px;
+  padding-left: 35px; 
 }
 
 .info-header h3 {
