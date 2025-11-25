@@ -394,18 +394,39 @@ html, body {
   transition: background 0.3s ease; /* Smooth transition for background color */
 }
 
-
-/* Align icon and heading horizontally */
 .info-header {
-  display: flex;            /* Use flexbox to arrange items side by side */
-  align-items: center;      /* Center-align the icon and heading vertically */
-  gap: 12px;                /* Space between the icon and heading */
+  display: flex;
+  align-items: center; /* Vertically align the icon and text */
+  position: relative;  /* Allows the icon to stack on top of the text */
+  gap: 12px;           /* Space between icon and text */
 }
 
 .info-header h3 {
   margin: 0;                /* Remove any margin from the heading */
 }
 
+
+.contact-icon {
+  width: 30px;                /* Set the width of the icon */
+  height: 30px;               /* Set the height of the icon */
+  position: absolute;         /* Position the icon absolutely within the container */
+  left: -40px;                /* Position the icon to the left in front of the text */
+  background: var(--bg-box);  /* Set a background color for the icon (same as the background of the text box) */
+  border-radius: 50%;         /* Make the icon circular */
+  padding: 6px;               /* Add some padding inside the icon for spacing */
+  transition: background 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the icon */
+.contact-icon:hover {
+  background: var(--mustard); /* Change background color on hover */
+}
+
+/* Wrapper for the heading and paragraph */
+.text-wrapper {
+  position: relative;         /* Keep the text on top of the icon */
+  z-index: 1;                 /* Ensure text stays above the icon */
+}
 
 /* ============================================================
    14. SOCIAL ICONS — SMALLER ICONS + CLOSER TOGETHER
