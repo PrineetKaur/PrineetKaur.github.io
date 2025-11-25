@@ -486,3 +486,16 @@ html, body {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 768px) {
+  .contact-icon {
+    width: 20px;   /* Make icons smaller */
+    height: 20px;  /* Make icons smaller */
+  }
+
+  .info-header {
+    flex-direction: column; /* Stack the icon and heading vertically on small screens */
+    align-items: flex-start; /* Align them to the left */
+  }
+}
+
