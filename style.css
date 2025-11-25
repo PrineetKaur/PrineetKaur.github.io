@@ -383,7 +383,7 @@ html, body {
   align-items: center;
   position: relative;
   gap: 12px;
-  padding-left: 15px;  /* Add padding to the left to shift the icons and text a bit to the right */
+  padding-left: 25px;  /* Add padding to the left to shift the icons and text a bit to the right */
 }
 
 .info-header h3 {
@@ -391,11 +391,12 @@ html, body {
 }
 
 .contact-icon {
-  width: 36px;
-  height: 36px;
-  position: absolute;
+  width: 42px;
+  height: 42px;
+  position: center;   <!--absolute; -->
   left: -35px;  /* Move the icon a bit closer towards the center */
-  background: var(--bg-dark);
+background: var(--mustard); 
+filter: brightness(0) saturate(100%) invert(65%) sepia(61%) saturate(350%) hue-rotate(10deg) brightness(90%); /* Lightened mustard */
   border-radius: 50%;
   padding: 6px;
   transition: background 0.3s ease;
@@ -404,7 +405,7 @@ html, body {
 /* Hover effect for the icon */
 
 .contact-icon:hover {
-  background: var(--mustard); /* white background on hover */
+  background: var(--mustard); 
 }
 
 /* Wrapper for the heading and paragraph */
