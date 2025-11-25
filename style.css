@@ -382,7 +382,7 @@ html, body {
   display: flex;
   align-items: center;
   position: relative;
-  gap: 6px;
+  gap: 2px;
   padding-left: 25px;  /* Add padding to the left to shift the text a bit to the right */
 }
 
