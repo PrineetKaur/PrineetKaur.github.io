@@ -257,7 +257,7 @@ html, body {
 
 .section {
   padding: 50px;
-  background: #f0f0f0;  /* Light grey background for sections */
+  background: var(--bg-dark);  
   border-radius: 12px;
   margin-bottom: 40px;
 }
