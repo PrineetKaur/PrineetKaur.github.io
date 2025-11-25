@@ -185,7 +185,7 @@ html, body {
 }
 
 .hero h1 { font-size: 48px; margin-bottom: 1px; }
-.hero h2 { font-size: 26px; font-weight: 500; margin-bottom: 60px; }
+.hero h2 { font-size: 26px; font-weight: 500; margin-bottom: 60px; color: var(--text-lightgrey)}
 
 
 /* ============================================================
