@@ -383,28 +383,22 @@ html, body {
   align-items: center;
   position: relative;
   gap: 2px;
-  padding-left: 25px;  /* Add padding to the left to shift the text a bit to the right */
+  padding-left: 35px; 
 }
 
 .info-header h3 {
-  margin: 0;                /* Remove any margin from the heading */
+  margin: 0;               
 }
 
 .contact-icon {
   width: 46px;
   height: 46px;
   position: absolute;
-  left: -15px;  /* Move the icon a bit closer towards the center */
+  left: -25px; 
   background: var(--mustard); 
   border-radius: 50%;
   padding: 6px;
   transition: background 0.3s ease;
-}
-
-/* Hover effect for the icon */
-
-.contact-icon:hover {
-  background: var(--mustard); 
 }
 
 /* Wrapper for the heading and paragraph */
