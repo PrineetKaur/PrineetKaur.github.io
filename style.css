@@ -390,8 +390,10 @@ html, body {
 }
 
 .contact-icon:hover {
-  background: var(--mustard); /* Change background to mustard on hover, like the nav icon hover effect */
+  background: var(--mustard); /* Change background color on hover */
+  transition: background 0.3s ease; /* Smooth transition for background color */
 }
+
 
 /* Align icon and heading horizontally */
 .info-header {
