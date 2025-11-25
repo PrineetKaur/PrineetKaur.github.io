@@ -393,6 +393,17 @@ html, body {
   background: var(--mustard); /* Change background to mustard on hover, like the nav icon hover effect */
 }
 
+/* Align icon and heading horizontally */
+.info-header {
+  display: flex;            /* Use flexbox to arrange items side by side */
+  align-items: center;      /* Center-align the icon and heading vertically */
+  gap: 12px;                /* Space between the icon and heading */
+}
+
+.info-header h3 {
+  margin: 0;                /* Remove any margin from the heading */
+}
+
 
 /* ============================================================
    14. SOCIAL ICONS — SMALLER ICONS + CLOSER TOGETHER
