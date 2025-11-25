@@ -378,17 +378,6 @@ html, body {
   border: 0;
 }
 
-.contact-icon {
-  width: 24px;  /* Adjust size if needed */
-  height: 24px; /* Adjust size if needed */
-  margin-right: 10px; /* Space between icon and text */
-  vertical-align: middle; /* Align icon with text */
-  background: var(--bg-box); /* Same background as the non-hover navigation icons */
-  border-radius: 50%; /* Make the icon background circular */
-  padding: 5px; /* Add some padding inside the icon */
-  transition: 0.3s ease; /* Add a smooth transition for hover effects */
-}
-
 .info-header {
   display: flex;
   align-items: center;
@@ -397,17 +386,16 @@ html, body {
   padding-left: 15px;  /* Add padding to the left to shift the icons and text a bit to the right */
 }
 
-
 .info-header h3 {
   margin: 0;                /* Remove any margin from the heading */
 }
 
 .contact-icon {
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
   position: absolute;
-  left: -25px;  /* Move the icon a bit closer towards the center */
-  background: var(--mustard);
+  left: -35px;  /* Move the icon a bit closer towards the center */
+  background: var(--bg-dark);
   border-radius: 50%;
   padding: 6px;
   transition: background 0.3s ease;
@@ -416,7 +404,7 @@ html, body {
 /* Hover effect for the icon */
 
 .contact-icon:hover {
-  background: var(--text-white); /* white background on hover */
+  background: var(--mustard); /* white background on hover */
 }
 
 /* Wrapper for the heading and paragraph */
