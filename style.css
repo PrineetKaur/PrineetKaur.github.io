@@ -382,7 +382,7 @@ html, body {
   display: flex;
   align-items: center;
   position: relative;
-  gap: 1px;
+  gap: 5px;
   padding-left: 45px; 
 }
 
@@ -395,6 +395,8 @@ html, body {
   height: 46px;
   position: absolute;
   left: -15px; 
+  top: 50%;   /* Centering the logo vertically */
+  transform: translateY(-50%); /* Adjust for perfect centering */
   background: var(--mustard); 
   border-radius: 50%;
   padding: 6px;
@@ -405,6 +407,9 @@ html, body {
 .text-wrapper {
   position: relative;         /* Keep the text on top of the icon */
   z-index: 1;                 /* Ensure text stays above the icon */
+  display: flex;
+  flex-direction: column;
+  gap: 4px; 
 }
 
 /* ============================================================
