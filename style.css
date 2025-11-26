@@ -262,12 +262,12 @@ html, body {
    9. ABOUT ME
 ============================================================ */
 .about h2 { font-size: 36px; color: var(--text-lightgrey) !important; }
-.about h3 { font-size: 21px; color: var(--grey-label) !important; }
-.about p { font-size: 17px; color: var(--text-lightgrey) !important; }
+.about h3 { font-size: 20px; color: var(--grey-label) !important; }
+.about p { font-size: 15px; color: var(--text-lightgrey) !important; }
 
 /* ============================================================
-   10. TECH TOOLKIT
-============================================================ */
+   TECH TOOLKIT
+
 .tools-grid { display: grid; gap: 12px; }
 
 .tool .tool-head {
@@ -289,20 +289,19 @@ html, body {
   height: 100%;
   background: var(--mustard);
 }
+============================================================ */
 
 
 /* ============================================================
-   11. BLOGS AND ARTICLES
+   10. BLOGS AND ARTICLES
 ============================================================ */
 .blog h2 { font-size: 36px; color: var(--text-lightgrey) !important;}
-.blog h3 { font-size: 21px; color: var(--grey-label) !important;}
-.blog p { font-size: 17px; color: var(--text-lightgrey)!important;}
+.blog h3 { font-size: 20px; color: var(--grey-label) !important;}
+.blog p { font-size: 15px; color: var(--text-lightgrey)!important;}
 
 /* ============================================================
-   12. WRITING DOCUMENTATION
+   11. WRITING DOCUMENTATION
 ============================================================ */
-
-.writing-grid { display: grid; gap: 12px; }
 
 .writing-item {
   background: var(--bg-box);  
@@ -318,7 +317,7 @@ html, body {
 
 
 /* ============================================================
-   11. TECHNICAL PROJECTS
+   12. TECHNICAL PROJECTS
 ============================================================ */
 
 .project h2 { font-size: 36px; color: var(--text-lightgrey) !important;}
@@ -337,8 +336,8 @@ html, body {
   box-shadow: 0 8px 24px rgba(0,0,0,0.5);
 }
 
-.card h3 { font-size: 21px; color: var(--grey-label) !important; }
-.card p {  font-size: 17px;  color: var(--text-lightgrey) !important; }
+.card h3 { font-size: 20px; color: var(--grey-label) !important; }
+.card p {  font-size: 15px;  color: var(--text-lightgrey) !important; }
 
 .card img {
   width: 100%;
@@ -416,10 +415,10 @@ html, body {
   gap: -50px;                 /* Slightly reduce the gap between heading and text */
 }
 
-.contact-left h3 { font-size: 21px; color: var(--grey-label) !important; }
-.contact-right h3 { font-size: 21px; color: var(--grey-label) !important; }
-.contact-left p { font-size: 17px; color: var(--text-lightgrey) !important; }
-.contact-right p { font-size: 17px; color: var(--text-lightgrey) !important; }
+.contact-left h3 { font-size: 20px; color: var(--grey-label) !important; }
+.contact-right h3 { font-size: 20px; color: var(--grey-label) !important; }
+.contact-left p { font-size: 15px; color: var(--text-lightgrey) !important; }
+.contact-right p { font-size: 15px; color: var(--text-lightgrey) !important; }
 
 /* ============================================================
    14. SOCIAL ICONS — SMALLER ICONS + CLOSER TOGETHER
