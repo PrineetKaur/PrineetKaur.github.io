@@ -402,6 +402,7 @@ html, body {
 
   padding: 0;                /* remove padding so the SVG stays correct size */
   transition: background 0.3s ease;
+  margin-top: 2px;
 }
 
 .contact-icon img {
@@ -411,13 +412,13 @@ html, body {
   margin: auto;
 }
 
-
 /* Wrapper for the heading and paragraph */
 
 .text-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;   /* vertically center text */
+  justify-content: center;  /* Centers the text vertically */
+  gap: 1px;                 /* Reduce gap between heading and text */
 }
 
 /* ============================================================
