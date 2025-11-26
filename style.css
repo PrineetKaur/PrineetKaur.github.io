@@ -381,10 +381,8 @@ html, body {
 .info-header {
   display: flex;
   align-items: center;
-  gap: 18px; /* small spacing */
-  min-height: 48px; /* ensures equal vertical alignment */
+  gap: 8px; /* small spacing */
 }
-
 
 .info-header h3 {
   margin: 0;               
@@ -418,7 +416,7 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: center;  /* Centers the text vertically */
-  gap: 1px;                 /* Reduce gap between heading and text */
+  gap: 2px;                 /* Reduce gap between heading and text */
 }
 
 /* ============================================================
