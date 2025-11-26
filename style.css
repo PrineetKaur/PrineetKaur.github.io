@@ -267,10 +267,37 @@ html, body {
 
 /* ============================================================
    10. BLOGS AND ARTICLES
-============================================================ */
+
 .blog h2 { font-size: 36px; color: var(--text-lightgrey) !important;}
 .blog h3 { font-size: 20px; color: var(--grey-label) !important;}
-.blog p { font-size: 15px; color: var(--text-lightgrey)!important;}
+.blog p { font-size: 15px; color: var(--text-lightgrey)!important;} 
+============================================================ */
+
+.blog h2 { font-size: 36px; color: var(--text-lightgrey) !important;}
+
+.blogcards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.blogcard {
+  background:  var(--bg-box); 
+  padding: 12px;
+  border-radius: 10px;
+  color: #ddd;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+
+.blogcard h3 { font-size: 20px; color: var(--grey-label) !important; }
+.blogcard p {  font-size: 15px;  color: var(--text-lightgrey) !important; }
+
+.blogcard img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
 
 /* ============================================================
    11. WRITING DOCUMENTATION
@@ -286,13 +313,13 @@ html, body {
 
 .project h2 { font-size: 36px; color: var(--text-lightgrey) !important;}
 
-.cards {
+.projectcards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 16px;
 }
 
-.card {
+.projectcard {
   background:  var(--bg-box); 
   padding: 12px;
   border-radius: 10px;
@@ -300,10 +327,10 @@ html, body {
   box-shadow: 0 8px 24px rgba(0,0,0,0.5);
 }
 
-.card h3 { font-size: 20px; color: var(--grey-label) !important; }
-.card p {  font-size: 15px;  color: var(--text-lightgrey) !important; }
+.projectcard h3 { font-size: 20px; color: var(--grey-label) !important; }
+.projectcard p {  font-size: 15px;  color: var(--text-lightgrey) !important; }
 
-.card img {
+.projectcard img {
   width: 100%;
   height: 150px;
   object-fit: cover;
