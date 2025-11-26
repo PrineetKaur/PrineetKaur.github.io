@@ -380,8 +380,9 @@ html, body {
 
 .info-header {
   display: flex;
-  align-items: center;   /* centers icon + text vertically */
-  gap: 15px;             /* spacing between icon and text */
+  align-items: center;
+  gap: 18px; /* small spacing */
+  min-height: 48px; /* ensures equal vertical alignment */
 }
 
 
@@ -416,7 +417,7 @@ html, body {
 .text-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 2px;  /* smaller gap between heading + text */
+  justify-content: center;   /* vertically center text */
 }
 
 /* ============================================================
