@@ -57,17 +57,6 @@ html, body {
   box-shadow: 0 6px 20px rgba(0,0,0,0.4);
 }
 
-.profile h2 {
-  margin: 10px 0 4px;
-  font-size: 20px;
-  color: var(--text-lightgrey); /* Keep headings white */
-}
-
-.profile .role {
-  font-size: 13px;
-  color: var(--text-lightgrey); /* Light grey for role text */
-}
-
 .profile {
   text-align: center;
   width: 100%;
@@ -76,11 +65,6 @@ html, body {
 .profile img {
   display: block;
   margin: 0 auto;
-}
-
-.heading.quote p {
-  color: var(--text-lightgrey); /* Set text color to light grey */
-  text-align: center; /* Horizontally center-align the text */
 }
 
 .heading.quote h3 {
@@ -262,9 +246,8 @@ html, body {
   margin-bottom: 40px;
 }
 
-
 .section-title {
-  font-size: 26px;
+  font-size: 28px;
   color: var(--text-lightgrey)!important; 
   margin-bottom: 25px;
   border-left: 4px solid var(--mustard);
@@ -278,9 +261,9 @@ html, body {
 /* ============================================================
    9. ABOUT ME
 ============================================================ */
-.about h2 { color: var(--text-lightgrey) !important; }
-.about h3 { color: var(--grey-label) !important; }
-.about p {color: var(--text-lightgrey) !important; }
+.about h2 { font-size: 30px; color: var(--text-lightgrey) !important; }
+.about h3 { font-size: 18px; color: var(--grey-label) !important; }
+.about p { font-size: 12px; color: var(--text-lightgrey) !important; }
 
 /* ============================================================
    10. TECH TOOLKIT
@@ -291,7 +274,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   font-weight: 500;
-  color: var(--text-lightgrey) !important;
+  color: var(--grey-label) !important;
 }
 
 .bar {
@@ -375,11 +358,6 @@ html, body {
   color: var(--text-lightgrey);
 }
 
-.contact-left h3 { color: var(--grey-label) !important; }
-.contact-right h3 { color: var(--grey-label) !important; }
-.contact-left p { color: var(--text-lightgrey) !important; }
-.contact-right p { color: var(--text-lightgrey) !important; }
-
 .contact-left iframe,
 .contact-right iframe {
   width: 100%;
@@ -428,6 +406,10 @@ html, body {
   gap: -50px;                 /* Slightly reduce the gap between heading and text */
 }
 
+.contact-left h3 { color: var(--grey-label) !important; }
+.contact-right h3 { color: var(--grey-label) !important; }
+.contact-left p { color: var(--text-lightgrey) !important; }
+.contact-right p { color: var(--text-lightgrey) !important; }
 
 /* ============================================================
    14. SOCIAL ICONS — SMALLER ICONS + CLOSER TOGETHER
