@@ -403,6 +403,14 @@ html, body {
   transition: background 0.3s ease;
 }
 
+.contact-icon img {
+  width: 18px;
+  height: 18px;
+  display: block;
+  margin: auto;
+}
+
+
 /* Wrapper for the heading and paragraph */
 
 .text-wrapper {
