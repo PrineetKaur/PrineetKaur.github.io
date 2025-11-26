@@ -385,7 +385,7 @@ html, body {
 }
 
 .info-header h3 {
-  margin: 20;               
+  margin: 5;               
 }
 
 .contact-icon {
@@ -415,7 +415,7 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: center;  /* Ensures the text is centered vertically */
-  gap: 6px;                 /* Slightly reduce the gap between heading and text */
+  gap: 10px;                 /* Slightly reduce the gap between heading and text */
 }
 
 
