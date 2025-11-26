@@ -381,11 +381,11 @@ html, body {
 .info-header {
   display: flex;
   align-items: center;      /* Center icon and text vertically */
-  gap: 15px;                /* Keep the gap between icon and text comfortable */
+  gap: 30px;                /* Keep the gap between icon and text comfortable */
 }
 
 .info-header h3 {
-  margin: 0;               
+  margin: 10;               
 }
 
 .contact-icon {
