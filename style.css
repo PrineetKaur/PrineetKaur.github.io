@@ -303,18 +303,9 @@ html, body {
    11. WRITING DOCUMENTATION
 ============================================================ */
 
-.writing-item {
-  background: var(--bg-box);  
-  padding: 14px;
-  border-radius: 10px;
-  color: var(--text-lightgrey)!important; 
-  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
-}
-
 .writing h2 { font-size: 36px; color: var(--text-lightgrey) !important;}
 .writing h3 { font-size: 21px; color: var(--grey-label) !important; }
 .writing p { font-size: 17px; color: var(--text-lightgrey)!important;}
-
 
 /* ============================================================
    12. TECHNICAL PROJECTS
