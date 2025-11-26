@@ -266,33 +266,6 @@ html, body {
 .about p { font-size: 15px; color: var(--text-lightgrey) !important; }
 
 /* ============================================================
-   TECH TOOLKIT
-
-.tools-grid { display: grid; gap: 12px; }
-
-.tool .tool-head {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 500;
-  color: var(--grey-label) !important;
-}
-
-.bar {
-  background: #333;
-  height: 12px;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.bar span {
-  display: block;
-  height: 100%;
-  background: var(--mustard);
-}
-============================================================ */
-
-
-/* ============================================================
    10. BLOGS AND ARTICLES
 ============================================================ */
 .blog h2 { font-size: 36px; color: var(--text-lightgrey) !important;}
