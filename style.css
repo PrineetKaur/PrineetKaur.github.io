@@ -380,36 +380,35 @@ html, body {
 
 .info-header {
   display: flex;
-  align-items: center;
-  position: relative;
-  gap: 5px;
-  padding-left: 45px; 
+  align-items: center;   /* centers icon + text vertically */
+  gap: 15px;             /* spacing between icon and text */
 }
+
 
 .info-header h3 {
   margin: 0;               
 }
 
 .contact-icon {
-  width: 46px;
-  height: 46px;
-  position: absolute;
-  left: -15px; 
-  top: 50%;   /* Centering the logo vertically */
-  transform: translateY(-50%); /* Adjust for perfect centering */ 
-  background: var(--mustard); 
+  width: 38px;               /* smaller circle */
+  height: 38px;
+  background: var(--mustard);
   border-radius: 50%;
-  padding: 6px;
+  
+  display: flex;             /* center the inner icon */
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;                /* remove padding so the SVG stays correct size */
   transition: background 0.3s ease;
 }
 
 /* Wrapper for the heading and paragraph */
+
 .text-wrapper {
-  position: relative;         /* Keep the text on top of the icon */
-  z-index: 1;                 /* Ensure text stays above the icon */
   display: flex;
   flex-direction: column;
-  gap: 4px; /* Reduced gap between heading and text */
+  gap: 2px;  /* smaller gap between heading + text */
 }
 
 /* ============================================================
