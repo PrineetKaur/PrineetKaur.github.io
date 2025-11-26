@@ -415,7 +415,7 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: center;  /* Ensures the text is centered vertically */
-  gap: 10px;                 /* Slightly reduce the gap between heading and text */
+  gap: 1px;                 /* Slightly reduce the gap between heading and text */
 }
 
 
