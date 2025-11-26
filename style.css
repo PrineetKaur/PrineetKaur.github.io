@@ -70,7 +70,7 @@ html, body {
 .heading.quote h3 {
   color: var(--grey-label);          /* Grey label for the h3 text */
   text-align: center;                /* Center-align the h3 text */
-  font-weight: 400;                  /* Optional: Keep heading style similar to other h3 headings */
+  font-weight: 300;                  /* Optional: Keep heading style similar to other h3 headings */
 }
 
 
@@ -312,16 +312,16 @@ html, body {
   box-shadow: 0 6px 18px rgba(0,0,0,0.4);
 }
 
-.writing h2 {color: var(--text-lightgrey) !important;}
-.writing h3 { color: var(--grey-label) !important; }
-.writing p {color: var(--text-lightgrey)!important;}
+.writing h2 { font-size: 36px; color: var(--text-lightgrey) !important;}
+.writing h3 { font-size: 21px; color: var(--grey-label) !important; }
+.writing p { font-size: 17px; color: var(--text-lightgrey)!important;}
 
 
 /* ============================================================
    11. TECHNICAL PROJECTS
 ============================================================ */
 
-.project h2 {color: var(--text-lightgrey) !important;}
+.project h2 { font-size: 36px; color: var(--text-lightgrey) !important;}
 
 .cards {
   display: grid;
@@ -337,8 +337,8 @@ html, body {
   box-shadow: 0 8px 24px rgba(0,0,0,0.5);
 }
 
-.card h3 { color: var(--grey-label) !important; }
-.card p { color: var(--text-lightgrey) !important; }
+.card h3 { font-size: 21px; color: var(--grey-label) !important; }
+.card p {  font-size: 17px;  color: var(--text-lightgrey) !important; }
 
 .card img {
   width: 100%;
@@ -351,7 +351,7 @@ html, body {
    13. CONTACT
 ============================================================ */
 
-.contact h2 {color: var(--text-lightgrey) !important;}
+.contact h2 { font-size: 36px; color: var(--text-lightgrey) !important;}
 
 .contact-wrapper {
   display: grid;
@@ -416,10 +416,10 @@ html, body {
   gap: -50px;                 /* Slightly reduce the gap between heading and text */
 }
 
-.contact-left h3 { color: var(--grey-label) !important; }
-.contact-right h3 { color: var(--grey-label) !important; }
-.contact-left p { color: var(--text-lightgrey) !important; }
-.contact-right p { color: var(--text-lightgrey) !important; }
+.contact-left h3 { font-size: 21px; color: var(--grey-label) !important; }
+.contact-right h3 { font-size: 21px; color: var(--grey-label) !important; }
+.contact-left p { font-size: 17px; color: var(--text-lightgrey) !important; }
+.contact-right p { font-size: 17px; color: var(--text-lightgrey) !important; }
 
 /* ============================================================
    14. SOCIAL ICONS — SMALLER ICONS + CLOSER TOGETHER
