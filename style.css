@@ -355,7 +355,7 @@ html, body {
 .contact-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 35px;
+  gap: 15px;
 }
 
 .contact-left,
