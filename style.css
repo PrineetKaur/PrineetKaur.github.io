@@ -380,8 +380,8 @@ html, body {
 
 .info-header {
   display: flex;
-  align-items: center;
-  gap: 8px; /* small spacing */
+  align-items: center;      /* Center icon and text vertically */
+  gap: 15px;                /* Keep the gap between icon and text comfortable */
 }
 
 .info-header h3 {
@@ -389,8 +389,8 @@ html, body {
 }
 
 .contact-icon {
-  width: 38px;               /* smaller circle */
-  height: 38px;
+  width: 42px;               /* smaller circle */
+  height: 42px;
   background: var(--mustard);
   border-radius: 50%;
   
@@ -400,7 +400,6 @@ html, body {
 
   padding: 0;                /* remove padding so the SVG stays correct size */
   transition: background 0.3s ease;
-  margin-top: 2px;
 }
 
 .contact-icon img {
@@ -415,9 +414,10 @@ html, body {
 .text-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;  /* Centers the text vertically */
-  gap: 2px;                 /* Reduce gap between heading and text */
+  justify-content: center;  /* Ensures the text is centered vertically */
+  gap: 6px;                 /* Slightly reduce the gap between heading and text */
 }
+
 
 /* ============================================================
    14. SOCIAL ICONS — SMALLER ICONS + CLOSER TOGETHER
