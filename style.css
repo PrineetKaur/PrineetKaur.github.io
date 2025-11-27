@@ -316,7 +316,7 @@ html, body {
 }
 
 .writingcard h3 { font-size: 17px; color: var(--grey-label) !important; }
-.writingcard p {  font-size: 12px;  color: var(--text-lightgrey) !important; }
+.writingcard p {  font-size: 14px;  color: var(--text-lightgrey) !important; }
 
 /* ============================================================
    12. TECHNICAL PROJECTS
