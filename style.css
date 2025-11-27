@@ -316,6 +316,12 @@ html, body {
 }
 
 .writingcard h3 { font-size: 17px; color: var(--grey-label) !important; }
+
+h3 a {
+  color: inherit; /* Inherits color from h3 */
+  /* text-decoration: none; Remove underline */
+}
+
 .writingcard p {  font-size: 14px;  color: var(--text-lightgrey) !important; }
 
 /* ============================================================
