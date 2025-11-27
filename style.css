@@ -297,72 +297,26 @@ html, body {
 
 /* ============================================================
    11. WRITING DOCUMENTATION
+============================================================ */
+
 .writing h2 { font-size: 36px; color: var(--text-lightgrey) !important;}
-.writing h3 { font-size: 21px; color: var(--grey-label) !important; }
-.writing p { font-size: 17px; color: var(--text-lightgrey)!important;}
-============================================================ */
 
-/* ============================================================
-   11. WRITING DOCUMENTATION (Updated for blog-style design)
-============================================================ */
-
-.writing h2 { 
-  font-size: 36px; 
-  color: var(--text-lightgrey) !important;
-  margin-bottom: 30px; /* Spacing between title and items */
-}
-
-/* Container for all writing items */
-.writing-list {
+.writingcards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid for multiple items */
-  gap: 30px; /* Gap between items */
-  padding: 20px 0; /* Padding around the section */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
 }
 
-/* Individual writing item (card-style) */
-.writing-item {
-  background-color: var(--background-dark); /* Background color of the card */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  padding: 20px; /* Padding inside each card */
-  transition: transform 0.3s ease; /* Smooth hover effect */
+.writingcard {
+  background:  var(--bg-box); 
+  padding: 12px;
+  border-radius: 10px;
+  color: #ddd;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
 }
 
-/* Hover effect for each item */
-.writing-item:hover {
-  transform: translateY(-5px); /* Lift effect on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
-}
-
-/* Title of each writing item */
-.writing-title {
-  font-size: 22px; 
-  color: var(--text-lightgrey); /* Keeping your light grey color */
-  font-weight: 600; /* Slightly bolder title */
-  margin-bottom: 10px; /* Space between title and description */
-}
-
-/* Description of each writing item */
-.writing-description {
-  font-size: 17px;
-  color: var(--grey-label); /* Keeping the grey label color */
-  line-height: 1.5; /* Line height for better readability */
-  margin-bottom: 20px; /* Space at the bottom of the description */
-}
-
-/* Optional: Add a "Read More" link or button (if you want) */
-.writing-card .read-more {
-  font-size: 16px;
-  color: var(--primary-color); /* Use your primary accent color */
-  text-decoration: none;
-  font-weight: 500;
-  margin-top: 15px;
-}
-
-.writing-card .read-more:hover {
-  text-decoration: underline;
-}
+.writingcard h3 { font-size: 20px; color: var(--grey-label) !important; }
+.writingcard p {  font-size: 15px;  color: var(--text-lightgrey) !important; }
 
 /* ============================================================
    12. TECHNICAL PROJECTS
@@ -383,9 +337,6 @@ html, body {
   color: #ddd;
   box-shadow: 0 8px 24px rgba(0,0,0,0.5);
 }
-
-.projectcard h3 { font-size: 20px; color: var(--grey-label) !important; }
-.projectcard p {  font-size: 15px;  color: var(--text-lightgrey) !important; }
 
 .projectcard img {
   width: 100%;
