@@ -285,8 +285,8 @@ html, body {
   box-shadow: 0 8px 24px rgba(0,0,0,0.5);
 }
 
-.blogcard h3 { font-size: 20px; color: var(--grey-label) !important; }
-.blogcard p {  font-size: 15px;  color: var(--text-lightgrey) !important; }
+.blogcard h3 { font-size: 17px; color: var(--grey-label) !important; }
+.blogcard p {  font-size: 12px;  color: var(--text-lightgrey) !important; }
 
 .blogcard img {
   width: 100%;
@@ -310,13 +310,13 @@ html, body {
 .writingcard {
   background:  var(--bg-box); 
   padding: 12px;
-  border-radius: 10px;
+  border-radius: 0px;
   color: #ddd;
   box-shadow: 0 8px 24px rgba(0,0,0,0.5);
 }
 
-.writingcard h3 { font-size: 20px; color: var(--grey-label) !important; }
-.writingcard p {  font-size: 15px;  color: var(--text-lightgrey) !important; }
+.writingcard h3 { font-size: 17px; color: var(--grey-label) !important; }
+.writingcard p {  font-size: 12px;  color: var(--text-lightgrey) !important; }
 
 /* ============================================================
    12. TECHNICAL PROJECTS
