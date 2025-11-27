@@ -285,15 +285,15 @@ html, body {
   box-shadow: 0 8px 24px rgba(0,0,0,0.5);
 }
 
-.blogcard h3 { font-size: 17px; color: var(--grey-label) !important; }
-.blogcard p {  font-size: 12px;  color: var(--text-lightgrey) !important; }
-
 .blogcard img {
   width: 100%;
   height: 150px;
   object-fit: cover;
   border-radius: 8px;
 }
+
+.blogcard h3 { font-size: 17px; color: var(--grey-label) !important; text-align: center;}
+
 
 /* ============================================================
    11. WRITING DOCUMENTATION
