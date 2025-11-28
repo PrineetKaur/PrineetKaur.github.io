@@ -287,12 +287,15 @@ html, body {
 
 .blogcard img {
   width: 100%;
-  height: 150px;
+  height: 160px;
   object-fit: cover;
   border-radius: 8px;
+  transition: opacity 0.3s ease;
 }
 
-.blogcard h3 { font-size: 17px; color: var(--grey-label) !important; text-align: center;}
+.blogcard:hover img {
+  opacity: 0.75;
+}
 
 
 /* ============================================================
@@ -309,7 +312,7 @@ html, body {
 
 .writingcard {
   background:  var(--bg-box); 
-  padding: 12px;
+  padding: 14px;
   border-radius: 0px;
   color: #ddd;
   box-shadow: 0 8px 24px rgba(0,0,0,0.5);
@@ -325,7 +328,7 @@ h3 a {
 .writingcard p {  font-size: 14px;  color: var(--text-lightgrey) !important; }
 
 /* ============================================================
-   12. TECHNICAL PROJECTS
+   12. DATA SCIENCE PROJECTS
 ============================================================ */
 
 .project h2 { font-size: 36px; color: var(--text-lightgrey) !important;}
@@ -346,9 +349,14 @@ h3 a {
 
 .projectcard img {
   width: 100%;
-  height: 150px;
+  height: 160px;
   object-fit: cover;
   border-radius: 8px;
+  transition: opacity 0.3s ease;
+}
+
+.projectcard:hover img {
+  opacity: 0.75;
 }
 
 /* ============================================================
