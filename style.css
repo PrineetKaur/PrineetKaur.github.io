@@ -299,7 +299,7 @@ html, body {
 
 
 /* ============================================================
-   11. WRITING DOCUMENTATION
+   11. TECHNICAL DOCUMENTATION
 ============================================================ */
 
 .writing h2 { font-size: 36px; color: var(--text-lightgrey) !important;}
@@ -318,14 +318,13 @@ html, body {
   box-shadow: 0 8px 24px rgba(0,0,0,0.5);
 }
 
-.writingcard h3 { font-size: 17px; color: var(--grey-label) !important; }
+.writingcard h3 { font-size: 17px; color: var(--grey-label) !important; line-height: 1.4;}
 
 h3 a {
-  color: inherit; /* Inherits color from h3 */
-  /* text-decoration: none; Remove underline */
+  color: inherit; 
 }
 
-.writingcard p {  font-size: 14px;  color: var(--text-lightgrey) !important; }
+.writingcard p {  font-size: 14px;  color: var(--text-lightgrey) !important; line-height: 1.6;}
 
 /* ============================================================
    12. DATA SCIENCE PROJECTS
