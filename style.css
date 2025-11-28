@@ -319,21 +319,21 @@ html, body {
   box-shadow: 0 8px 24px rgba(0,0,0,0.5);
 }
 
-.writingcard h3 { font-size: 17px; color: var(--grey-label) !important; line-height: 1.4;}
+.writingcard h3 { font-size: 17px; color: var(--grey-label) !important; line-height: 1.5;}
 
 .writingcard h3 a {
   color: inherit;
   display: inline-block;                     
   transition: transform 0.25s ease,
-              color 0.25s ease;
+  color 0.25s ease;
 }
 
 .writingcard h3 a:hover {
-  transform: scale(1.06);                    
+  transform: scale(1.05);                    
   color: var(--text-lightgrey);              
 }
 
-.writingcard p {  font-size: 14px;  color: var(--text-lightgrey) !important; line-height: 1.6;}
+.writingcard p {  font-size: 14px;  color: var(--text-lightgrey) !important; line-height: 1.4;}
 
 /* ============================================================
    12. DATA SCIENCE PROJECTS
