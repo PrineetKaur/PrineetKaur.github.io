@@ -171,8 +171,8 @@ html, body {
   text-align: center;
 }
 
-.hero h1 { font-size: 48px; margin-bottom: 1px; }
-.hero h2 { font-size: 26px; font-weight: 500; margin-bottom: 60px; color: var(--text-lightgrey)}
+.hero h1 { font-size: 50px; margin-bottom: 1px; }
+.hero h2 { font-size: 28px; font-weight: 500; margin-bottom: 60px; color: var(--text-lightgrey)}
 
 
 /* ============================================================
@@ -243,7 +243,7 @@ html, body {
   padding: 50px;
   background: var(--bg-dark);  
   border-radius: 12px;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 .section-title {
