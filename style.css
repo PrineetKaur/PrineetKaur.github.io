@@ -319,7 +319,7 @@ html, body {
   box-shadow: 0 8px 24px rgba(0,0,0,0.5);
 }
 
-.writingcard h3 { font-size: 17px; color: var(--grey-label) !important; line-height: 1.5;}
+.writingcard h3 { font-size: 18px; color: var(--grey-label) !important; line-height: 1.5;}
 
 .writingcard h3 a {
   color: inherit;
@@ -333,7 +333,7 @@ html, body {
   color: var(--text-lightgrey);              
 }
 
-.writingcard p {  font-size: 14px;  color: var(--text-lightgrey) !important; line-height: 1.4;}
+.writingcard p {  font-size: 15px;  color: var(--text-lightgrey) !important; line-height: 1.5;}
 
 /* ============================================================
    12. DATA SCIENCE PROJECTS
