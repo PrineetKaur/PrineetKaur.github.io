@@ -427,6 +427,7 @@ html, body {
   height: 40px;
   background: var(--mustard);
   border-radius: 50%;
+  margin-bottom: 5px;
   
   display: flex;             /* changed from flex center the inner icon */
   align-items: center;
