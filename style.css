@@ -121,6 +121,19 @@ html, body {
   color: var(--text-white);
 }
 
+/* ACTIVE STATE — same visual effect as hover, but persistent when scrolling */
+.nav-link.active {
+  transform: translateX(6px);
+  color: var(--text-white);
+  font-weight: 600;
+}
+
+.nav-link.active img.icon {
+  filter: brightness(0) saturate(100%) invert(65%) sepia(61%) 
+          saturate(350%) hue-rotate(10deg) brightness(90%);
+}
+
+
 
 /* ============================================================
    5. MAIN WRAPPER
