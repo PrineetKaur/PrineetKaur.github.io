@@ -488,12 +488,34 @@ html, body {
 /* ============================================================
    15. FOOTER
 ============================================================ */
+
+/* Footer sits cleanly at the bottom with no extra spacing */
+
+.site-footer {
+  width: 100%;
+  padding: 20px 28px;
+  margin: 0;              /* remove unnecessary spacing */
+  text-align: center;      /* right-align footer text */
+  background: transparent;
+  position: relative;     /* ensures no forced float behavior */
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #8d8d8d;
+}
+
+.site-footer p {
+  margin: 0;
+  padding: 0;
+}
+
+/* 
 .site-footer {
   margin-top: 0;
   padding: 5px;
   text-align: center;
   color: #8d8d8d;
 }
+*/
 
 
 /* ============================================================
