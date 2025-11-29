@@ -292,6 +292,7 @@ html, body {
   object-fit: cover;
   border-radius: 8px;
   transition: opacity 0.35s ease;
+  color 0.25s ease;
 }
 
 .blogcard:hover img {
@@ -362,6 +363,7 @@ html, body {
   object-fit: cover;
   border-radius: 8px;
   transition: opacity 0.35s ease;
+  color 0.25s ease;
 }
 
 .projectcard:hover img {
