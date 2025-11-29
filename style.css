@@ -276,7 +276,7 @@ html, body {
 ============================================================ */
 .about h2 { font-size: 36px; color: var(--text-lightgrey) !important; }
 .about h3 { font-size: 20px; color: var(--grey-label) !important; line-height: 1.3;}
-.about p { font-size: 15px; color: var(--text-lightgrey) !important; line-height: 1.4;}
+.about p { font-size: 16px; color: var(--text-lightgrey) !important; line-height: 1.4;}
 
 /* ============================================================
    10. BLOGS AND ARTICLES
