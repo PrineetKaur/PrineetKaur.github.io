@@ -402,7 +402,6 @@ html, body {
 .info-header {
   display: center;
   align-items: center;      /* Center icon and text vertically */
-  justify-content: center;
   gap: 15px;                /* Keep the gap between icon and text comfortable */
 }
 
@@ -411,8 +410,8 @@ html, body {
 }
 
 .contact-icon {
-  width: 40px;               /* smaller circle */
-  height: 40px;
+  width: 38px;               /* smaller circle */
+  height: 38px;
   background: var(--mustard);
   border-radius: 50%;
   
@@ -425,8 +424,8 @@ html, body {
 }
 
 .contact-icon img {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   display: block;
   margin: auto;
 }
