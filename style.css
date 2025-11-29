@@ -379,7 +379,7 @@ html, body {
 .contact-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 15px;
+  gap: 25px;
 }
 
 .contact-left,
@@ -402,7 +402,7 @@ html, body {
 .info-header {
   display: flex;
   align-items: center;      /* Center icon and text vertically */
-  gap: 30px;                /* Keep the gap between icon and text comfortable */
+  gap: 25px;                /* Keep the gap between icon and text comfortable */
 }
 
 .info-header h3 {
@@ -410,12 +410,12 @@ html, body {
 }
 
 .contact-icon {
-  width: 42px;               /* smaller circle */
-  height: 42px;
+  width: 40px;               /* smaller circle */
+  height: 40px;
   background: var(--mustard);
   border-radius: 50%;
   
-  display: flex;             /* center the inner icon */
+  display: center;             /* changed from flex center the inner icon */
   align-items: center;
   justify-content: center;
 
@@ -424,8 +424,8 @@ html, body {
 }
 
 .contact-icon img {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   display: block;
   margin: auto;
 }
