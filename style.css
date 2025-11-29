@@ -398,7 +398,7 @@ html, body {
 .contact-left,
 .contact-right {
   background: var(--bg-box);
-  padding: 20px;
+  padding: 30px;
   border-radius: 12px;
   border: 2px solid var(--mustard);
   color: var(--text-lightgrey);
