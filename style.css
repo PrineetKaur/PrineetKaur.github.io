@@ -400,9 +400,10 @@ html, body {
 }
 
 .info-header {
-  display: flex;
+  display: center;
   align-items: center;      /* Center icon and text vertically */
-  gap: 5px;                /* Keep the gap between icon and text comfortable */
+  justify-content: center;
+  gap: 15px;                /* Keep the gap between icon and text comfortable */
 }
 
 .info-header h3 {
