@@ -71,7 +71,7 @@ html, body {
   color: var(--grey-label);          /* Grey label for the h3 text */
   text-align: center;                /* Center-align the h3 text */
   font-weight: 360;   
- /* font-style: italic; */
+  font-style: italic; 
 }
 
 
@@ -291,7 +291,7 @@ html, body {
   height: 165px;
   object-fit: cover;
   border-radius: 8px;
-  transition: opacity 0.25s ease;
+  transition: opacity 0.35s ease;
 }
 
 .blogcard:hover img {
@@ -361,7 +361,7 @@ html, body {
   height: 165px;
   object-fit: cover;
   border-radius: 8px;
-  transition: opacity 0.25s ease;
+  transition: opacity 0.35s ease;
 }
 
 .projectcard:hover img {
