@@ -90,3 +90,30 @@ if (form) {
     }
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          let id = entry.target.getAttribute("id");
+
+          // remove previous active classes
+          navLinks.forEach(link => link.classList.remove("active"));
+
+          // activate the correct nav link
+          const activeLink = document.querySelector(`.nav-link[data-target="${id}"]`);
+          if (activeLink) activeLink.classList.add("active");
+        }
+      });
+    },
+    { threshold: 0.55 } // % of section visible before it triggers
+  );
+
+  document.querySelectorAll("section").forEach(section => {
+    observer.observe(section);
+  });
+});
+
