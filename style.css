@@ -275,8 +275,8 @@ html, body {
    9. ABOUT ME
 ============================================================ */
 .about h2 { font-size: 36px; color: var(--text-lightgrey) !important; }
-.about h3 { font-size: 21px; color: var(--grey-label) !important; line-height: 1.4;}
-.about p { font-size: 17px; color: var(--text-lightgrey) !important; line-height: 1.6;}
+.about h3 { font-size: 20px; color: var(--grey-label) !important; line-height: 1.4;}
+.about p { font-size: 16px; color: var(--text-lightgrey) !important; line-height: 1.6;}
 
 /* ============================================================
    10. BLOGS AND ARTICLES
@@ -333,7 +333,7 @@ html, body {
   box-shadow: 0 8px 24px rgba(0,0,0,0.5);
 }
 
-.writingcard h3 { font-size: 18px; color: var(--grey-label) !important; line-height: 1.4;}
+.writingcard h3 { font-size: 20px; color: var(--grey-label) !important; line-height: 1.4;}
 
 .writingcard h3 a {
   color: inherit;
@@ -347,7 +347,7 @@ html, body {
   color: var(--text-lightgrey);              
 }
 
-.writingcard p {  font-size: 15px;  color: var(--text-lightgrey) !important; line-height: 1.5;}
+.writingcard p {  font-size: 16px;  color: var(--text-lightgrey) !important; line-height: 1.5;}
 
 /* ============================================================
    12. DATA SCIENCE PROJECTS
@@ -455,8 +455,8 @@ html, body {
 
 .contact-left h3 { font-size: 20px; color: var(--grey-label) !important; }
 .contact-right h3 { font-size: 20px; color: var(--grey-label) !important; }
-.contact-left p { font-size: 15px; color: var(--text-lightgrey) !important; }
-.contact-right p { font-size: 15px; color: var(--text-lightgrey) !important; }
+.contact-left p { font-size: 16px; color: var(--text-lightgrey) !important; }
+.contact-right p { font-size: 16px; color: var(--text-lightgrey) !important; }
 
 /* ============================================================
    14. SOCIAL ICONS — SMALLER ICONS + CLOSER TOGETHER
