@@ -303,13 +303,13 @@ html, body {
   height: 165px;
   object-fit: cover;
   border-radius: 8px;
-  transition: opacity 0.35s ease,
+  transition: opacity 0.45s ease,
   color 0.40s ease;
 }
 
 .blogcard:hover img {
   transform: scale(1.07);  
-  opacity: 1.10;
+  opacity: 1.20;
 }
 
 
@@ -374,13 +374,13 @@ html, body {
   height: 165px;
   object-fit: cover;
   border-radius: 8px;
-  transition: opacity 0.35s ease,
+  transition: opacity 0.45s ease,
   color 0.40s ease;
 }
 
 .projectcard:hover img {
   transform: scale(1.07);  
-  opacity: 1.10;
+  opacity: 1.20;
 }
 
 /* ============================================================
