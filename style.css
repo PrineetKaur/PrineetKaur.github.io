@@ -70,8 +70,7 @@ html, body {
 .heading.quote h3 {
   color: var(--grey-label);          /* Grey label for the h3 text */
   text-align: center;                /* Center-align the h3 text */
-  font-weight: 360;   
-  font-style: italic; 
+  font-weight: 360;    
 }
 
 
