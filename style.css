@@ -379,7 +379,7 @@ html, body {
 .contact-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 25px;
+  gap: 5px;
 }
 
 .contact-left,
@@ -402,7 +402,7 @@ html, body {
 .info-header {
   display: flex;
   align-items: center;      /* Center icon and text vertically */
-  gap: 20px;                /* Keep the gap between icon and text comfortable */
+  gap: 10px;                /* Keep the gap between icon and text comfortable */
 }
 
 .info-header h3 {
