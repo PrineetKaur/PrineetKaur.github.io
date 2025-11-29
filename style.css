@@ -402,7 +402,7 @@ html, body {
 .info-header {
   display: flex;
   align-items: center;      /* Center icon and text vertically */
-  gap: 10px;                /* Keep the gap between icon and text comfortable */
+  gap: 30px;                /* Keep the gap between icon and text comfortable */
 }
 
 .info-header h3 {
@@ -436,7 +436,7 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: center;  /* Ensures the text is centered vertically */
-  gap: -50px;                 /* Slightly reduce the gap between heading and text */
+  gap: 0;                 /* Slightly reduce the gap between heading and text */
 }
 
 .contact-left h3 { font-size: 20px; color: var(--grey-label) !important; }
@@ -489,8 +489,8 @@ html, body {
    15. FOOTER
 ============================================================ */
 .site-footer {
-  margin-top: 5px;
-  padding: 5px 0;
+  margin-top: 0;
+  padding: 0;
   text-align: center;
   color: #8d8d8d;
 }
