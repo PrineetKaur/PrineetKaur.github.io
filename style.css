@@ -275,7 +275,7 @@ html, body {
    9. ABOUT ME
 ============================================================ */
 .about h2 { font-size: 36px; color: var(--text-lightgrey) !important; }
-.about h3 { font-size: 20px; color: var(--grey-label) !important; line-height: 1.4;}
+.about h3 { font-size: 19px; color: var(--grey-label) !important; line-height: 1.5;}
 .about p { font-size: 16px; color: var(--text-lightgrey) !important; text-align: justify !important; line-height: 1.5;}
 
 /* ============================================================
