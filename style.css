@@ -278,6 +278,13 @@ html, body {
 .about h3 { font-size: 20px; color: var(--grey-label) !important; line-height: 1.4;}
 .about p { font-size: 16px; color: var(--text-lightgrey) !important; text-align: justify !important; line-height: 1.5;}
 
+.about a,
+.about a:visited,
+.about a:hover,
+.about a:active {
+  color: var(--grey-label) !important;
+}
+
 /* ============================================================
    10. BLOGS AND ARTICLES
 ============================================================ */
