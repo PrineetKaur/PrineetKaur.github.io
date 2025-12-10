@@ -278,6 +278,18 @@ html, body {
 .about h3 { font-size: 20px; color: var(--grey-label) !important; line-height: 1.4;}
 .about p { font-size: 16px; color: var(--text-lightgrey) !important; text-align: justify !important; line-height: 1.5;}
 
+.about p a {
+  color: inherit;
+  display: inline-block;                     
+  transition: transform 0.25s ease,
+  color 0.25s ease;
+}
+
+.about p a:hover {
+  transform: scale(1.05);                    
+  color: var(--text-lightgrey);              
+}
+
 /* ============================================================
    10. BLOGS AND ARTICLES
 ============================================================ */
@@ -556,8 +568,10 @@ html, body {
 
 /* ============================================================
    FORCE LINK COLOR INSIDE ABOUT SECTION
-============================================================ */
+
 .about p a,
 .about p a:visited,
 .about p a:hover,
 .about p a:active {color: var(--grey-label) !important;}
+
+============================================================ */
