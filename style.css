@@ -74,7 +74,7 @@ html, body {
 }
 
 
-/* ============================================================
+/* ===============================================================
    4. NAVIGATION — LIGHT GREY ICONS, MUSTARD HOVER + TEXT STYLING
 ============================================================ */
 
@@ -148,7 +148,7 @@ html, body {
 }
 
 
-/* ====================================================================
+/* =============================================================
    6. HERO SECTION
 ============================================================ */
 .hero {
@@ -188,9 +188,9 @@ html, body {
 .hero h2 { font-size: 26px; font-weight: 500; margin-bottom: 60px; color: var(--text-lightgrey)}
 
 
-/* ============================================================
+/* ==============================================================================
    6. HERO SECTION — Underline the typing text while keeping the typing effect
-============================================================ */
+============================================================================== */
 .hero h2 .typed {
   position: relative; /* Position the text for the underline */
   display: inline-block; /* Ensures the underline is just under the text */
@@ -350,8 +350,7 @@ html, body {
 .writingcard p {  font-size: 15px;  color: var(--text-lightgrey) !important; line-height: 1.4;}
 
 /* ============================================================
-   12. DATA SCIENCE PROJECTS
-============================================================ */
+   12. DATA SCIENCE PROJECTS (old)
 
 .project h2 { font-size: 36px; color: var(--text-lightgrey) !important;}
 
@@ -382,6 +381,80 @@ html, body {
   transform: scale(1.07);  
   opacity: 1.20;
 }
+
+============================================================ */
+
+/* ============================================================
+   DATA SCIENCE PROJECTS – Project Cards
+============================================================ */
+
+.projectcards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.projectcard {
+  background: var(--bg-box);
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+
+/* Image wrapper */
+.project-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Image */
+.project-image-wrapper img {
+  width: 100%;
+  height: 165px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Overlay (dim background) */
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Overlay text */
+.project-overlay h3 {
+  color: #fff;
+  font-size: 1.15rem;
+  text-align: center;
+  padding: 0 12px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Hover effects */
+.projectcard:hover img {
+  transform: scale(1.07);
+  opacity: 0.6;
+}
+
+.projectcard:hover .project-overlay {
+  opacity: 1;
+}
+
+.projectcard:hover .project-overlay h3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 /* ============================================================
    13. CONTACT
