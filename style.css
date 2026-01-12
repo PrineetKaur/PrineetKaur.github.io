@@ -279,10 +279,8 @@ html, body {
 .about p { font-size: 16px; color: var(--text-lightgrey) !important; text-align: justify !important; line-height: 1.5;}
 
 /* ============================================================
-   10. BLOGS AND ARTICLES
+   BLOGS AND ARTICLES – Blog Cards
 ============================================================ */
-
-.blog h2 { font-size: 36px; color: var(--text-lightgrey) !important;}
 
 .blogcards {
   display: grid;
@@ -291,25 +289,64 @@ html, body {
 }
 
 .blogcard {
-  background:  var(--bg-box); 
+  background: var(--bg-box);
   padding: 12px;
   border-radius: 10px;
-  color: #ddd;
   box-shadow: 0 8px 24px rgba(0,0,0,0.5);
 }
 
-.blogcard img {
+/* Image wrapper */
+.blog-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Image */
+.blog-image-wrapper img {
   width: 100%;
   height: 165px;
   object-fit: cover;
   border-radius: 8px;
-  transition: opacity 0.45s ease,
-  color 0.40s ease;
+  transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
+/* Overlay (dim background) */
+.blog-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Overlay text */
+.blog-overlay h3 {
+  color: #fff;
+  font-size: 1.05rem;
+  text-align: center;
+  padding: 0 12px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Hover effects */
 .blogcard:hover img {
-  transform: scale(1.07);  
-  opacity: 1.20;
+  transform: scale(1.07);
+  opacity: 0.6;
+}
+
+.blogcard:hover .blog-overlay {
+  opacity: 1;
+}
+
+.blogcard:hover .blog-overlay h3 {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 
