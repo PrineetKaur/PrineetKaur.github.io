@@ -372,18 +372,18 @@ html, body {
 }
 
 /* ============================================================
-   11. TECHNICAL DOCUMENTATION
+   11. CONTENT SYSTEMS
 ============================================================ */
 
-.writing h2 { font-size: 36px; color: var(--text-lightgrey) !important;}
+.content h2 { font-size: 36px; color: var(--text-lightgrey) !important;}
 
-.writingcards {
+.contentcards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 16px;
 }
 
-.writingcard {
+.contentcard {
   background:  var(--bg-box); 
   padding: 14px;
   border-radius: 0px;
@@ -391,25 +391,25 @@ html, body {
   box-shadow: 0 8px 24px rgba(0,0,0,0.5);
 }
 
-.writingcard h3 { font-size: 19px; color: var(--grey-label) !important; line-height: 1.25;}
+.contentcard h3 { font-size: 19px; color: var(--grey-label) !important; line-height: 1.25;}
 
-.writingcard h3 a {
+.contentcard h3 a {
   color: inherit;
   display: inline-block;                     
   transition: transform 0.25s ease,
   color 0.25s ease;
 }
 
-.writingcard h3 a:hover {
+.contentcard h3 a:hover {
   transform: scale(1.05);                    
   color: var(--text-lightgrey);              
 }
 
-.writingcard p {  font-size: 15px;  color: var(--text-lightgrey) !important; line-height: 1.4;}
+.contentcard p {  font-size: 15px;  color: var(--text-lightgrey) !important; line-height: 1.4;}
 
 
 /* ============================================================
-   DATA SCIENCE PROJECTS – Project Cards
+   AI PROJECTS
 ============================================================ */
 
 .projectcards {
