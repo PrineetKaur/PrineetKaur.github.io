@@ -106,6 +106,10 @@ document.addEventListener("DOMContentLoaded", () => {
           // activate the correct nav link
           const activeLink = document.querySelector(`.nav-link[data-target="${id}"]`);
           if (activeLink) activeLink.classList.add("active");
+          history.replaceState(null, '', '#' + id);
+        }
+
+           
         }
       });
     },
@@ -116,23 +120,3 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(section);
   });
 });
-
-
-
-/* ----------------------------------------------
-   ADDING SECTION IDS
------------------------------------------------ */
-
-
-// Update URL hash as user scrolls between sections
-const sections = document.querySelectorAll('section[id]');
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      history.replaceState(null, '', '#' + entry.target.id);
-    }
-  });
-}, { threshold: 0.3 });
-
-sections.forEach(section => observer.observe(section));
