@@ -3,7 +3,6 @@
 ---------------------------------- */
 document.addEventListener("DOMContentLoaded", function () {
   const typedSpan = document.querySelector(".typed");
-
   if (typedSpan) {
     new Typed(".typed", {
       strings: typedSpan.getAttribute("data-typed-items").split(","),
@@ -20,16 +19,14 @@ const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 /* ------------------------------------------
-   ACTIVE NAVIGATION ON SCROLL (works great)
+   ACTIVE NAVIGATION ON SCROLL
 ------------------------------------------- */
 const navLinks = document.querySelectorAll('.nav-link');
 const sections = Array.from(document.querySelectorAll('main .section, main .hero'));
 
 function onScroll(){
   const scrollY = window.scrollY + 120;
-
   navLinks.forEach(link => link.classList.remove('active'));
-
   for (const sec of sections) {
     if (sec.offsetTop <= scrollY && (sec.offsetTop + sec.offsetHeight) > scrollY){
       const id = sec.id;
@@ -38,10 +35,8 @@ function onScroll(){
       return;
     }
   }
-
   navLinks[0].classList.add('active');
 }
-
 window.addEventListener('scroll', onScroll);
 onScroll();
 
@@ -66,19 +61,15 @@ const form = document.getElementById("contactForm");
 if (form) {
   form.addEventListener("submit", async function(e){
     e.preventDefault();
-
     const status = document.getElementById("formStatus");
     status.textContent = "Sending...";
-
     const formData = new FormData(this);
-
     try {
       const resp = await fetch("https://formspree.io/f/your-form-id", {
         method: "POST",
         headers: { 'Accept': 'application/json' },
         body: formData
       });
-
       if (resp.ok){
         status.textContent = "Message sent!";
         this.reset();
@@ -91,31 +82,24 @@ if (form) {
   });
 }
 
+/* ----------------------------------------------
+   URL HASH + ACTIVE NAV ON SCROLL (IntersectionObserver)
+----------------------------------------------- */
 document.addEventListener("DOMContentLoaded", () => {
-  const navLinks = document.querySelectorAll(".nav-link");
-
   const observer = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          let id = entry.target.getAttribute("id");
-
-          // remove previous active classes
+          const id = entry.target.getAttribute("id");
           navLinks.forEach(link => link.classList.remove("active"));
-
-          // activate the correct nav link
           const activeLink = document.querySelector(`.nav-link[data-target="${id}"]`);
           if (activeLink) activeLink.classList.add("active");
           history.replaceState(null, '', '#' + id);
         }
-
-           
-        }
       });
     },
-    { threshold: 0.55 } // % of section visible before it triggers
+    { threshold: 0.55 }
   );
-
   document.querySelectorAll("section").forEach(section => {
     observer.observe(section);
   });
